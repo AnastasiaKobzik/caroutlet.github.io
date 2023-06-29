@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Caroutlet.by - Помощь в покупке автомобиля. Аукцион авто из Европы</title>
+
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    
+    <!-- FONTS  -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive-main.css">
+
+    <link rel="stylesheet" href="./css/about-us.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./image/logo.svg" alt="logo" width="138"
+                        height="24"></a>
+                <div class="number collapse show"> <a href="tel:+375447008477">+375 44 700 84 77</a></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./about-us.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item registration">
+                            <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/account/register/first"
+                                target="_blank">Регистрация</a>
+                        </li>
+                        <li class="nav-item select-car">
+                            <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/request"
+                                target="_blank">Подбор авто
+                                <span style="margin-left: 6px;">↗</span></a>
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown in-mobile d-flex">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            +375 29 700 84 77
+                            <img src="./image/tel/a1.png" alt="a1" class="tel-img">
+                            <img src="./image/tel/mts.png" alt="mts" class="tel-img">
+                            <img src="./image/tel/life.png" alt="life" class="tel-img">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:+375447008477"><img src="./image/tel/a1.png" alt="a1"
+                                        class="tel-img">
+                                    +375 44 700 84 77</a></li>
+                            <li><a class="dropdown-item" href="tel:+375297008477"><img src="./image/tel/mts.png" alt="mts"
+                                        class="tel-img">+375 29 700 84 77</a></li>
+                            <li><a class="dropdown-item" href="tel:+375257008477"><img src="./image/tel/life.png" alt="life"
+                                        class="tel-img">+375 25 700 84 77</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="./index.html"><img src="./image/logo.svg" alt="logo" width="138"
+                                height="24"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><span class="toogle-item-close"></span></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="navbar-nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Информация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./about-us.html">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto buts">
+                                <li class="nav-item registration">
+                                    <a class="nav-link" aria-current="page"
+                                        href="https://www.caroutlet.eu/account/register/first"
+                                        target="_blank">Регистрация</a>
+                                </li>
+                                <li class="nav-item select-car">
+                                    <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/request"
+                                        target="_blank">Подбор авто
+                                        <span style="margin-left: 6px;">↗</span></a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <ul class="navbar-nav phones">
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375447008477"><img src="./image/tel/a1.png" alt="a1"
+                                        class="tel-img">+375 44 700 84 77</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375297008477"><img src="./image/tel/mts.png" alt="mts"
+                                        class="tel-img">+375 29 700 84 77</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375257008477"><img src="./image/tel/life.png" alt="life"
+                                        class="tel-img">+375 25 700 84 77</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chats dropstart">
+            <button class="chat-button " data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="ellipse-light-blue">
+                    <div class="ellipse-blue">
+                        <img src="./image/icon/chat.svg" alt="chat">
+                    </div>
+                </div>
+            </button>
+            <div class='messengers-chat dropdown-menu '>
+                <a href='#'><img src='./image/png/whatsapp.png' alt='whatsapp'></a>
+                <a href='#'><img src='./image/png/viber-circle.png' alt='viber'></a>
+                <a href='#'><img src='./image/png/telegram.png' alt='telegram'></a>
+            </div>
+        </div>
+
+
+        <div class="bg-main-top">
+            <div class="container">
+                <div class="row main-text-but">
+                    <div class="col-6">
+                        <p class="main-text">CarOutlet — автомобильный аукцион</p>
+                        <p class="sub-text">CarOutlet является одной из ведущих онлайн-платформ в Европе для всех участников рынка подержанных легковых автомобилей и фургонов.</p>
+                        <button class="main-but">Бесплатная консультация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white-block">
+            <div class="container">
+                <p class="main-text">Мы разработали удобный онлайн-аукцион для того, чтобы вы могли в любое время из любого места
+                    максимально удобно и выгодно покупать качественные автомобили напрямую у лизинговых компаний и дилеров.</p>
+                <p class="sub-text">Наша цель — сделать процесс продажи простым, безопасным и надежным для покупателей и продавцов.
+                    Максимально снизив риски для обеих сторон, мы гарантируем качество и надежность каждого продаваемого на аукционе
+                    автомобиля.
+                    <br><br>
+                    CarOutlet участвует в каждом этапе аукциона, от помощи с выбором автомобиля до доставки транспортного средства
+                    покупателю. Более чем 10-летний опыт продаж подержанных авто позволил нам стать надежным посредником между
+                    покупателем и продавцом.
+                </p>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.caroutlet.eu/account/register/first" target="_blank" class="button">Регистрация</a>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="bg-white-information">
+            <div class="container">
+                <h2 class="title">Автомобили в отличном техническом состоянии</h2>
+                <img src="./image/jpeg/photo-car-about-us.jpg" alt="carOutlet">
+                <p class="sub-title">Большинство автолюбителей приобретают автомобиль, опираясь на искренние заверения продавца об оригинальности пробега, идеальном состоянии автомобиля и прилагаемых документов. Проблемы настигают через несколько месяцев, а то и год после приобретения транспорта.е иного автомобиля.</p>
+
+                <p class="text-information"> <span>Пользуясь услугами компании CarOutlet, вы гарантировано приобретаете автомобиль:</span>  <br><br>
+                <span>● С достоверным пробегом и подлинной сервисной историей</span> в единой электронной сервисной базе, подтверждаемой запросом в
+                любой официальный сервисный центр РБ и мира. За предоставление ложной информации о пробеге уголовная ответственность!<br><br>
+                <span>● На момент покупки полностью соответствующий Европейским нормам безопасности</span> и технического состояния, не требующий обслуживания и прошедший линию диагностики по допуску к эксплуатации (кроме битых лотов).<br><br>
+                <span>● Весь период эксплуатации (от первого до последнего км пробега), обслуживаемый только в Официальных Сервисных Центрах Производителя</span>, в которых все технические обслуживания производились строго по регламенту (своевременно), а все заменяемые расходники (жидкости, масла, фильтра, ремни, ролики, колодки, элементы подвески, и т.п.) использовались
+                исключительно Оригинальные от производителя, что обеспечивает высочайшую остаточную ресурсность всех узлов и агрегатов.<br><br>
+                <span>● С неукоснительным соблюдением условий по прохождению тех. обслуживаний</span> (исключительно в официальных СЦ), что гарантируется жесточайшими требованиями, прописанными в лизинговом договоре, при малейшем нарушении которого –
+                колоссальные штрафы и 100% отъем автомобиля как предмета залога. Автомобиль, хотя бы единожды не обслуженный в
+                официальном сервисном центре производителя, на аукцион CarOutlet не выставляется.<br><br>
+                <span>● Не бывший в ДТП</span> (с потерей геометрии несуших элементов кузова и сработавшими системами безопасности, подушки и т.п.),
+                и не имеющий скрытых дефектов. Автомобили, после ДТП с потерей геометрии несуших элементов кузова, после получения
+                страховых выплат, выставляются как лоты в аварийном состоянии.<br><br>
+                <span>● Все автомобили, доставляемые CarOutlet, транспортируются исключительно автовозами</span> и полностью застрахованы на всех
+                этапах доставки от любых повреждений, что позволяет гарантировать вам полное соответствие изначально заявленной
+                дефектологии (зафиксированные на фото потертости, царапинки, сколы и т.п.), с фактическим состоянием автомобиля при
+                получении. В случае несоответствия приобретенного автомобиля описанию на сайте аукциона, CarOutlet гарантирует
+                финансовую компенсацию ущерба вплоть до возврата автомобиля поставщику.</p>
+            </div>
+        </div>
+
+        <div class="bg-white-block-two">
+            <div class="container"> 
+                <!-- <img src="./image/icon/emoji-finger.svg" alt="emoji-finger"> -->
+                <p class="main-text">☝  CarOutlet предоставляет уникальную гарантию на отсутствие скрытых дефектов силовой установки и трансмиссии. В случае выявлении скрытых дефектов, не указанных в сервисной истории (принимается к рассмотрению диагностический акт авторизованных С/Ц ЕЭС и на территории ЕЭС), обеспечивают на ваш выбор: финансовую компенсацию ущерба, возврат стоимости авто, либо приобретение иного автомобиля.</p>
+                <div class="d-flex justify-content-center">
+                    <a href="https://www.caroutlet.eu/account/register/first" target="_blank" class="button">Регистрация</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white-contact">
+            <div class="container">
+                <h2 class="title">Есть вопросы? Наши специалисты помогут!</h2>
+                <div class="time-work">
+                    <p>В будние: 9.00—13.00 и 14.00—18.00 <br> Суббота: 10.00—13.00 и 14.00—17.00</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="tel:+375447008477">+375 29 700 84 77</a>
+                    </div>
+                </div>
+                <div class="slick block-specialist">
+                    <div class="specialist">
+                        <img src="./image/jpeg/specialist-1.jpg" alt="Специалист">
+                        <p class="name">Михаил</p>
+                    </div>
+                    <div class="specialist">
+                        <img src="./image/jpeg/specialist-2.jpg" alt="Специалист">
+                        <p class="name">Михаил</p>
+                    </div>
+                    <div class="specialist">
+                        <img src="./image/jpeg/specialist-3.jpg" alt="Специалист">
+                        <p class="name">Михаил</p>
+                    </div>
+                    <div class="specialist">
+                        <img src="./image/jpeg/specialist-3.jpg" alt="Специалист">
+                        <p class="name">Михаил</p>
+                    </div>
+                </div>
+        
+                <div class="request-a-call">
+                    <p class="text">С вопросами в мессенджеры обращайтесь в любое время суток — вам ответят в рабочее время.
+                        Приятный покупока на CarOutlet!</p>
+                    <button class="but-request-call"><img src="./image/icon/emoji-tel.svg" alt="emoji-tel"> Заказать
+                        звонок</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="block-info">
+                <div class="logo-copyright">
+                    <img src="./image/logo.svg" alt="logo" class="logo">
+                    <p>© 2013–2023 CarOutlet</p>
+                </div>
+                <div class="information">
+                    <div class="info">
+                        <p class="title">ООО КарАутлет</p>
+                        <p class="text">УНП: 193338211</p>
+                        <p class="text">ОКПО: 503556595000</p>
+                    </div>
+                    <div class="info">
+                        <p class="title">Офис:</p>
+                        <p class="text">Республика Беларусь</p>
+                        <p class="text">220113 г. Минск</p>
+                        <p class="text">ул. Некрасова 114 - 58</p>
+                    </div>
+                    <div class="info">
+                        <p class="title">Контакты:</p>
+                        <a class="text">А1 +375 44 700 84 77</a><br>
+                        <a class="text">МТС +375 44 700 84 77</a><br>
+                        <a class="text">life:) +375 44 700 84 77</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="/slick/slick.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="./js/scriptGallery.js"></script>
+</body>
+</html>
