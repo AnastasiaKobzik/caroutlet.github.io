@@ -6,7 +6,41 @@ $('.slick-slider.gallery').slick({
     dots: false,
     prevArrow: $('.bg-white-popular .owl-nav button.owl-prev'),
     nextArrow: $('.bg-white-popular .owl-nav button.owl-next'),
-    infinite: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 1100,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 746,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+            }
+        }
+    ]
     
     
 });
