@@ -216,7 +216,7 @@ button:focus:not(:focus-visible) {
 .offcanvas-body .navbar-nav.buts {
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
 }
 
 .offcanvas-body .navbar-nav .nav-item.nav-item.registration .nav-link,
