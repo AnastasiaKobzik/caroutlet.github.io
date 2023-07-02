@@ -55,6 +55,34 @@ $('.slick-slider.reviews').slick({
     prevArrow: $('.bg-white-reviews .owl-nav button.owl-prev'),
     nextArrow: $('.bg-white-reviews .owl-nav button.owl-next'),
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 3,
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                arrows: false,
+                dots: true,
+                slidesToShow: 1,
+            }
+        }
+    ]
 });
 
 //контакты
@@ -64,5 +92,7 @@ $('.slick.block-specialist').slick({
     arrows: false,
     dots: true,
     infinite: true,
+    autoplay: true,
+    autoplaySpeed: 3000,
     
 });

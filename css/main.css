@@ -65,6 +65,7 @@ body {
 
 .navbar {
     background-color: #fff;
+    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 .navbar-brand img {
@@ -353,7 +354,9 @@ footer .block-info>.logo-copyright>img {
     width: auto;
     margin-bottom: 8px;
 }
-
+footer .block-info>.logo-copyright{
+    margin-right: 40px;
+}
 footer .block-info>.logo-copyright>p {
     color: #8D929F;
     font-size: 18px;
@@ -368,6 +371,7 @@ footer .information {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer .block-info .info:not(:last-child) {
@@ -385,6 +389,7 @@ footer .block-info .info a {
 
 footer .block-info .info a {
     cursor: pointer;
+    display: block;
 }
 
 footer .block-info .info .title {
