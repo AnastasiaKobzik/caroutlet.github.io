@@ -1,0 +1,153 @@
+/* ---bg-main-top--- */
+
+.bg-main-top {
+    background: linear-gradient(180deg, #477EEC 13.02%, #6196FF 100%);
+    padding-top: 85px;
+    padding-bottom: 85px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 60px;
+    overflow: hidden;
+}
+
+/* .bg-main-top::after {
+    content: '';
+    background: url(../image/icon/main-ellipse_white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: -75%;
+    left: -23%;
+    z-index: -2;
+} */
+
+/* .bg-main-top::before {
+    content: '';
+    background: url(../image/jpeg/bg-main-screenshot.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    bottom: 0;
+    right: 2%;
+    z-index: -1;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 4px 84px 0px rgba(0, 0, 0, 0.30);
+} */
+
+.bg-main-top .main-text-but .main-text {
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.bg-main-top .main-text-but .sub-text {
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* ---end-bg-main-top--- */
+.main-block-contact .container-lg{
+    width: 55%;
+}
+.main-block-contact .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.main-block-contact .buttons button{
+    border-radius: 8px;
+    border: 2px solid #477EEC;
+    background: #477EEC;
+    color: #fff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    width: 124px;
+    padding: 10px 16px;
+}
+.main-block-contact .buttons button.collapsed:hover{
+    border-color: #8D929FB2;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+.main-block-contact .buttons button.collapsed{
+    background: #FFF;
+    color: #25345B;
+    border-color: rgba(141, 146, 159, 0.35);
+}
+.main-block-contact .collapse{
+    margin-bottom: 180px;
+}
+.main-block-contact .collapse:not(.show){
+    display: none;
+}
+.main-block-contact .collapse-body,
+.main-block-contact .collapse-body .contact-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-block-contact .collapse-body .icon-info{
+    display: flex;
+    flex-direction: column;
+}
+.main-block-contact .collapse-body .icon-info>.d-flex{
+    margin-bottom: 46px;
+}
+.main-block-contact .collapse-body .icon-info>.d-flex:last-child{
+    margin-bottom: 0;
+}
+.main-block-contact .collapse-body .general-info>.text:first-child{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.main-block-contact .collapse-body .general-info>.text{
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+}
+.main-block-contact .collapse-body .icon-info img{
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+}
+.main-block-contact .collapse-body .icon-info .info p,
+.main-block-contact .collapse-body .icon-info .info a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    text-decoration: none;
+    margin-bottom: 4px;
+}
+.main-block-contact .collapse-body .icon-info .info .tel{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 600;
+}
+.main-block-contact .collapse-body .icon-info .info .mail{
+    color: #477EEC;
+    margin-bottom: 0;
+}

@@ -242,7 +242,7 @@
         line-height: 32px;
     }
     .bg-white-information #item-3 .cards .card .up{
-        padding-top:  30px 20px 8px 20px;
+        padding:  30px 20px 8px 20px;
     }
     .bg-white-information #item-3 .cards .card .card-subtitle{
         padding: 0 20px 30px 20px;
@@ -422,6 +422,9 @@
     }
     .bg-white-information #item-9 .table-info .col-7{
         width: 65%;
+    }
+    .bg-white-information #item-3 .cards .card .card-title{
+        width: 90%;
     }
 }
 @media only screen and (max-width : 440px){

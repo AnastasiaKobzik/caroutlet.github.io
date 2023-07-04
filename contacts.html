@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroutlet.by - Помощь в покупке автомобиля. Аукцион авто из Европы</title>
+
+    <!-- BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
+    
+    <!-- FONTS  -->
+    <link rel="stylesheet" href="./css/fonts.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive-main.css">
+
+    <link rel="stylesheet" href="./css/contacts.css">
+    <link rel="stylesheet" href="./css/responsive-contacts.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light  fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./image/logo.svg" alt="logo" width="138"
+                        height="24"></a>
+                <div class="number collapse show"> <a href="tel:+375447008477">+375 44 700 84 77</a></div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./information.html">Информация</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./about-us.html">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item registration">
+                            <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/account/register/first"
+                                target="_blank">Регистрация</a>
+                        </li>
+                        <li class="nav-item select-car">
+                            <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/request"
+                                target="_blank">Подбор авто
+                                <span style="margin-left: 6px;">↗</span></a>
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown in-mobile d-flex">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            +375 29 700 84 77
+                            <img src="./image/tel/a1.png" alt="a1" class="tel-img">
+                            <img src="./image/tel/mts.png" alt="mts" class="tel-img">
+                            <img src="./image/tel/life.png" alt="life" class="tel-img">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="tel:+375447008477"><img src="./image/tel/a1.png" alt="a1"
+                                        class="tel-img">
+                                    +375 44 700 84 77</a></li>
+                            <li><a class="dropdown-item" href="tel:+375297008477"><img src="./image/tel/mts.png" alt="mts"
+                                        class="tel-img">+375 29 700 84 77</a></li>
+                            <li><a class="dropdown-item" href="tel:+375257008477"><img src="./image/tel/life.png" alt="life"
+                                        class="tel-img">+375 25 700 84 77</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                    aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="./index.html"><img src="./image/logo.svg" alt="logo" width="138"
+                                height="24"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"><span class="toogle-item-close"></span></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <ul class="navbar-nav justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./information.html">Информация</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./about-us.html">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="./contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav ms-auto buts">
+                                <li class="nav-item registration">
+                                    <a class="nav-link" aria-current="page"
+                                        href="https://www.caroutlet.eu/account/register/first"
+                                        target="_blank">Регистрация</a>
+                                </li>
+                                <li class="nav-item select-car">
+                                    <a class="nav-link" aria-current="page" href="https://www.caroutlet.eu/request"
+                                        target="_blank">Подбор авто
+                                        <span style="margin-left: 6px;">↗</span></a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <ul class="navbar-nav phones">
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375447008477"><img src="./image/tel/a1.png" alt="a1"
+                                        class="tel-img">+375 44 700 84 77</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375297008477"><img src="./image/tel/mts.png" alt="mts"
+                                        class="tel-img">+375 29 700 84 77</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="tel:+375257008477"><img src="./image/tel/life.png" alt="life"
+                                        class="tel-img">+375 25 700 84 77</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="chats dropstart">
+            <button class="chat-button " data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="ellipse-light-blue">
+                    <div class="ellipse-blue">
+                        <img src="./image/icon/chat.svg" alt="chat">
+                    </div>
+                </div>
+            </button>
+            <div class='messengers-chat dropdown-menu '>
+                <a href='#'><img src='./image/png/whatsapp.png' alt='whatsapp'></a>
+                <a href='#'><img src='./image/png/viber-circle.png' alt='viber'></a>
+                <a href='#'><img src='./image/png/telegram.png' alt='telegram'></a>
+            </div>
+        </div>
+
+        <div class="bg-main-top">
+            <div class="container-lg">
+                <div class="row main-text-but">
+                    <div class="col-xl-6 col-md-9 col-sm-11">
+                        <p class="main-text">Наши офисы по всей Европе</p>
+                        <p class="sub-text">CarOutlet является одной из ведущих онлайн-платформ в Европе для всех участников рынка подержанных легковых автомобилей и фургонов.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-block-contact">
+            <div class="container-lg" id="inco-contact">
+                <!-- <div class="buttons">
+                    <button class="but" type="button" data-bs-toggle="collapse" data-bs-target="#germany" aria-expanded="true" aria-controls="germany">Германия</button>
+                    <button class="but collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#litva" aria-expanded="false" aria-controls="litva">Литва</button>
+                    <button class="but collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#belarus" aria-expanded="false" aria-controls="belarus">Беларусь</button>
+                    <button class="but collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ukraine" aria-expanded="false" aria-controls="ukraine">Украина</button>
+                    <button class="but collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#poland" aria-expanded="false" aria-controls="poland">Польша</button>
+                    <button class="but collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#russia" aria-expanded="false" aria-controls="russia">Россия</button>
+                </div>
+                <div class="collapse show" id="germany" data-bs-parent="#inco-contact">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">CarOutlet Germany GmbH <br>
+                                Rudolf Diesel Str. 7 <br>
+                                46446 Emmerich <br>
+                                Германия</p>
+                        
+                            <p class="text">Банк: Sparkasse Westmünsterland<br>
+                                Код банка: WELA DE 3W XXX<br>
+                                IBAN: DE56401545300002300663<br>
+                                НДС: DE815574499<br>
+                                Получатель: CarOutlet Germany GmbH<br>
+                                Регистрирующий суд: Amtsgericht Coesfeld<br>
+                                Код компании: HRB 14654</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+4915201850562" class="tel">+49 15201850562</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="litva" data-bs-parent="#inco-contact">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">UAB "CarOutlet"<br>
+                                Linkmenu g. 25a<br>
+                                LT-08217 Vilnius<br>
+                                Литва</p>
+                    
+                            <p class="text">Банк: UAB Medicinos bankas, Pamenkalnio g. 40, LT-01114<br>
+                            Код банка: MDBALT22<br>
+                            IBAN: LT877230000011467827<br>
+                            НДС: LT100006818312<br>
+                            Получатель: UAB "CarOutlet"<br>
+                            Код компании: 302767070</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+37064017020" class="tel">+370 640 17 020</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="belarus" data-bs-parent="#inco-contact">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">ООО КарАутлет<br>
+                                ул. Некрасова 114<br>
+                                220068 Минск<br>
+                                Беларусь</p>
+                    
+                            <p class="text">Банк: ОАО «АСБ Беларусбанк»<br>
+                            Код банка: AKBBBY2X<br>
+                            IBAN: BY55AKBB30120000015210000000<br>
+                            НДС: 193338211<br>
+                            Получатель: ООО КарАутлет<br>
+                            Код компании: 193338211</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+375333008477" class="tel">+375 33 300 84 77</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">info@caroutlet.by</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+375297008477" class="tel">+375 29 700 84 77</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">info@caroutlet.by</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="ukraine" data-bs-parent="#inco-contact">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">ТОВ КарАутлет<br>
+                                пр. Степана Бендери 21 офис 1<br>
+                                04073 Киев, Оболонський район<br>
+                                Украина</p>
+                    
+                            <p class="text">Банк: АТ «ОТП Банк»<br>
+                            Код банка: OTPVUAUK<br>
+                            IBAN: UA763005280000026002455083401<br>
+                            Получатель: ТОВ КарАутлет<br>
+                            Код компании: 43555413</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+380671509050" class="tel">+380 67 150 90 50</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">caroutletkiev@gmail.com</a>
+                                        <a href="mailto:caroutlet.com.ua" class="mail">caroutlet.com.ua</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+380631813924" class="tel">+380 63 1813 924</a>
+                                        <a href="mailto:caroutletkiev@gmail.com" class="mail">caroutletkiev@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="poland" data-bs-parent="#inco-contact">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">Atol Trans Sp. z o.o.<br>
+                                Nowogrodzka 64 / 43<br>
+                                02-014 Warszawa<br>
+                                Польша</p>
+                    
+                            <p class="text">Банк: PKO BANK POLSKI S.A., UL. PULAWSKA 15 WARSZAWA<br>
+                            Код банка: BPKOPLPW<br>
+                            IBAN: PL76102014750000890203083300<br>
+                            НДС: PL7011007216<br>
+                            Получатель: Atol Trans Sp. z o.o.<br>
+                            Код компании: 387674690</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+48733936153" class="tel">+48 7339 36153</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="russia" data-bs-parent="#inco-contact">
+                    <strong>Это тело аккордеона шестого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                    свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента.
+                    Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы
+                    можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                    Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя
+                    переход ограничивает переполнение.
+                </div> -->
+
+                <div class="buttons">
+                    <button class="but" type="button" data-bs-target="#germany">Германия</button>
+                    <button class="but collapsed" type="button" data-bs-target="#litva">Литва</button>
+                    <button class="but collapsed" type="button" data-bs-target="#belarus">Беларусь</button>
+                    <button class="but collapsed" type="button" data-bs-target="#ukraine">Украина</button>
+                    <button class="but collapsed" type="button"data-bs-target="#poland"">Польша</button>
+                    <button class="but collapsed" type="button" data-bs-target="#russia">Россия</button>
+                </div>
+                <div class="collapse show" id="germany">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">CarOutlet Germany GmbH <br>
+                                Rudolf Diesel Str. 7 <br>
+                                46446 Emmerich <br>
+                                Германия</p>
+                        
+                            <p class="text">Банк: Sparkasse Westmünsterland<br>
+                                Код банка: WELA DE 3W XXX<br>
+                                IBAN: DE56401545300002300663<br>
+                                НДС: DE815574499<br>
+                                Получатель: CarOutlet Germany GmbH<br>
+                                Регистрирующий суд: Amtsgericht Coesfeld<br>
+                                Код компании: HRB 14654</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+4915201850562" class="tel">+49 15201850562</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="collapse" id="litva">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">UAB "CarOutlet"<br>
+                                Linkmenu g. 25a<br>
+                                LT-08217 Vilnius<br>
+                                Литва</p>
+                    
+                            <p class="text">Банк: UAB Medicinos bankas, Pamenkalnio g. 40, LT-01114<br>
+                            Код банка: MDBALT22<br>
+                            IBAN: LT877230000011467827<br>
+                            НДС: LT100006818312<br>
+                            Получатель: UAB "CarOutlet"<br>
+                            Код компании: 302767070</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+37064017020" class="tel">+370 640 17 020</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="belarus">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">ООО КарАутлет<br>
+                                ул. Некрасова 114<br>
+                                220068 Минск<br>
+                                Беларусь</p>
+                    
+                            <p class="text">Банк: ОАО «АСБ Беларусбанк»<br>
+                            Код банка: AKBBBY2X<br>
+                            IBAN: BY55AKBB30120000015210000000<br>
+                            НДС: 193338211<br>
+                            Получатель: ООО КарАутлет<br>
+                            Код компании: 193338211</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+375333008477" class="tel">+375 33 300 84 77</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">info@caroutlet.by</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+375297008477" class="tel">+375 29 700 84 77</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">info@caroutlet.by</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="ukraine">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">ТОВ КарАутлет<br>
+                                пр. Степана Бендери 21 офис 1<br>
+                                04073 Киев, Оболонський район<br>
+                                Украина</p>
+                    
+                            <p class="text">Банк: АТ «ОТП Банк»<br>
+                            Код банка: OTPVUAUK<br>
+                            IBAN: UA763005280000026002455083401<br>
+                            Получатель: ТОВ КарАутлет<br>
+                            Код компании: 43555413</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+380671509050" class="tel">+380 67 150 90 50</a>
+                                        <a href="mailto:info@caroutlet.by" class="mail">caroutletkiev@gmail.com</a>
+                                        <a href="mailto:caroutlet.com.ua" class="mail">caroutlet.com.ua</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-auction-meneger.svg" alt="">
+                                    <div class="info">
+                                        <p>Аукционный менеджер</p>
+                                        <a href="tel:+380631813924" class="tel">+380 63 1813 924</a>
+                                        <a href="mailto:caroutletkiev@gmail.com" class="mail">caroutletkiev@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="poland">
+                    <div class="collapse-body">
+                        <div class="general-info">
+                            <p class="text">Atol Trans Sp. z o.o.<br>
+                                Nowogrodzka 64 / 43<br>
+                                02-014 Warszawa<br>
+                                Польша</p>
+                    
+                            <p class="text">Банк: PKO BANK POLSKI S.A., UL. PULAWSKA 15 WARSZAWA<br>
+                            Код банка: BPKOPLPW<br>
+                            IBAN: PL76102014750000890203083300<br>
+                            НДС: PL7011007216<br>
+                            Получатель: Atol Trans Sp. z o.o.<br>
+                            Код компании: 387674690</p>
+                        </div>
+                        <div class="contact-info">
+                            <div class="icon-info">
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-message-question.svg" alt="">
+                                    <div class="info">
+                                        <p>Обслуживание клиентов</p>
+                                        <a href="tel:+48733936153" class="tel">+48 7339 36153</a>
+                                        <a href="mailto:info@caroutlet.eu" class="mail">info@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <img src="./image/icon/contact-routing.svg" alt="">
+                                    <div class="info">
+                                        <p>Автомобильная логистика</p>
+                                        <a href="tel:+37069061000" class="tel">+370 690 61 000</a>
+                                        <a href="mailto:logistic@caroutlet.eu" class="mail">logistic@caroutlet.eu</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="russia">
+                    <strong>Это тело аккордеона шестого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                    свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента.
+                    Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы
+                    можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                    Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя
+                    переход ограничивает переполнение.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-lg">
+            <div class="block-info">
+                <div class="logo-copyright">
+                    <img src="./image/logo.svg" alt="logo" class="logo">
+                    <p>© 2013–2023 CarOutlet</p>
+                </div>
+                <div class="information">
+                    <div class="info">
+                        <p class="title">ООО КарАутлет</p>
+                        <p class="text">УНП: 193338211</p>
+                        <p class="text">ОКПО: 503556595000</p>
+                    </div>
+                    <div class="info">
+                        <p class="title">Офис:</p>
+                        <p class="text">Республика Беларусь</p>
+                        <p class="text">220113 г. Минск</p>
+                        <p class="text">ул. Некрасова 114 - 58</p>
+                    </div>
+                    <div class="info">
+                        <p class="title">Контакты:</p>
+                        <a class="text" href="tel:+375447008477">А1 +375 44 700 84 77</a>
+                        <a class="text" href="tel:+375297008477">МТС +375 29 700 84 77</a>
+                        <a class="text" href="tel:+375257008477">life:) +375 25 700 84 77</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+    <!-- slick -->
+    <script src="/slick/slick.min.js"></script>
+
+    <!-- BOOTSTRAP JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>
+        $('.buttons .but').on('click',function(){
+            let id = $(this).attr('data-bs-target');
+            let collapse = $('.collapse');
+            let buts = $('.but');
+            for (let i = 0; i < collapse.length; i++) {
+                $(collapse[i]).removeClass('show');
+            }
+            for (let i = 0; i < buts.length; i++) {
+                $(buts[i]).addClass('collapsed');
+            }
+
+            $(this).removeClass('collapsed')
+            $(id).addClass('show');
+            
+        })
+    </script>
+</body>
+</html>

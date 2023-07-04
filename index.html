@@ -20,6 +20,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/responsive-main.css">
+    <link rel="stylesheet" href="./css/modal.css">
     
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/responsive-index.css">
@@ -39,7 +40,7 @@
                             <a class="nav-link" aria-current="page" href="./about-us.html">О нас</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Контакты</a>
+                            <a class="nav-link" aria-current="page" href="./contacts.html">Контакты</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -90,7 +91,7 @@
                                     <a class="nav-link" aria-current="page" href="./about-us.html">О нас</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page" href="#">Контакты</a>
+                                    <a class="nav-link" aria-current="page" href="./contacts.html">Контакты</a>
                                 </li>
                             </ul>
                             <ul class="navbar-nav ms-auto buts">
@@ -145,7 +146,7 @@
                 <div class="row  main-text-but">
                     <div class="col-md-6 col-sm-8">
                         <p class="main-text">CarOutlet — cамый простой и выгодный способ купить автомобиль!</p>
-                        <button class="main-but">Бесплатная консультация</button>
+                        <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💬" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
@@ -191,7 +192,7 @@
                                 <div class="sub-item">Обслуживание в официальных С/Ц</div>
                                 <div class="sub-item">Отсутствие скрытых дефектов</div>
                             </div>
-                            <button class="btn">Бесплатная консультация</button>
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💬" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button>
                         </div>
                     </div>
                 </div>
@@ -222,7 +223,7 @@
                                 <p class="sub-text">Наша цель — сделать процесс продажи простым, безопасным и надежным для покупателей и продавцов. Максимально снизив риски
                                 для обеих сторон, мы гарантируем качество и надежность каждого продаваемого на аукционе автомобиля.</p>
                             </div>
-                            <button class="btn">Рассчитать стоимость</button>
+                            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💶"  data-bs-whatever="Рассчитать стоимость">Рассчитать стоимость</button>
                         </div>
                     </div>
                 </div>
@@ -269,7 +270,7 @@
                             <p class="title-item">Peugeot 308</p>
                         </div>
                         <div class="btn-cl">
-                            <button class="but">Рассчитать под ключ в РБ</button>
+                            <button class="but" data-bs-toggle="modal" data-bs-target="#modalDialogСalculate" data-bs-icon="💶"  data-bs-whatever="Рассчитать под ключ в РБ">Рассчитать под ключ в РБ</button>
                         </div>
                     </div>
                     <div class="item">
@@ -307,7 +308,7 @@
                             <p class="title-item">Renault TALISMAN Estate 5p Zen Energy dCi 110 EDC</p>
                         </div>
                         <div class="btn-cl">
-                            <button class="but">Рассчитать под ключ в РБ</button>
+                            <button class="but" data-bs-toggle="modal" data-bs-target="#modalDialogСalculate" data-bs-icon="💶"  data-bs-whatever="Рассчитать под ключ в РБ">Рассчитать под ключ в РБ</button>
                         </div>
                     </div>
                     <div class="item">
@@ -345,7 +346,7 @@
                             <p class="title-item">Renault TALISMAN Estate 5p Zen Energy dCi 110 EDC</p>
                         </div>
                         <div class="btn-cl">
-                            <button class="but">Рассчитать под ключ в РБ</button>
+                            <button class="but" data-bs-toggle="modal" data-bs-target="#modalDialogСalculate" data-bs-icon="💶"  data-bs-whatever="Рассчитать под ключ в РБ">Рассчитать под ключ в РБ</button>
                         </div>
                     </div>
                     <div class="item">
@@ -383,7 +384,7 @@
                             <p class="title-item">Renault TALISMAN Estate 5p Zen Energy dCi 110 EDC</p>
                         </div>
                         <div class="btn-cl">
-                            <button class="but">Рассчитать под ключ в РБ</button>
+                            <button class="but" data-bs-toggle="modal" data-bs-target="#modalDialogСalculate" data-bs-icon="💶"  data-bs-whatever="Рассчитать под ключ в РБ">Рассчитать под ключ в РБ</button>
                         </div>
                     </div>
                     <div class="item">
@@ -421,7 +422,7 @@
                             <p class="title-item">Renault TALISMAN Estate 5p Zen Energy dCi 110 EDC</p>
                         </div>
                         <div class="btn-cl">
-                            <button class="but">Рассчитать под ключ в РБ</button>
+                            <button class="but" data-bs-toggle="modal" data-bs-target="#modalDialogСalculate" data-bs-icon="💶"  data-bs-whatever="Рассчитать под ключ в РБ">Рассчитать под ключ в РБ</button>
                         </div>
                     </div>
                 </div>
@@ -523,12 +524,7 @@
                 <p class="text-preview">CarOutlet — одна из ведущих онлайн-платформ в Европе для всех участников рынка подержанных автомобилей и фургонов.</p>
             </div>
         </div>
-
-    
-
-
-        
-        
+ 
     </main>
    
     <footer>
@@ -561,12 +557,97 @@
         </div>
     </footer>
 
+<!-- modalDialog -->
+<div class="modal fade" id="modalDialog" tabindex="-1" aria-labelledby="modalDialogLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="modalDialogLabel">Бесплатная консультация</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона авто составляет € 5000.</h2>
+               <form method="post" class="modalDialogForm">
+                    <div class="form-group">
+                        <img class="icon" src="./image/icon/icon-name.svg"></img>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя*">
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <div class="form-group">
+                        <img class="icon" src="./image/icon/icon-tel.svg"></img>
+                        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Ваш телефон*">
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="comment" class="form-control" id="comment" rows="4" placeholder="Комментарий или вопрос*"></textarea>
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <input type="hidden" name="status" value="" class="hidden-status">
+                    <button type="button" class="button-send">Отправить заявку</button>
+               </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modalDialogСalculate -->
+<div class="modal fade" id="modalDialogСalculate" tabindex="-1" aria-labelledby="modalDialogСalculateLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="modalDialogСalculateLabel">Рассчитать под ключ в РБ</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона
+                    авто составляет € 5000.</h2>
+                <form method="post" class="modalDialogForm">
+                    <div class="form-group">
+                        <img class="icon" src="./image/icon/icon-name.svg"></img>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Ваше имя*">
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <div class="form-group">
+                        <img class="icon" src="./image/icon/icon-tel.svg"></img>
+                        <input type="tel" name="phone" class="form-control" id="phone" placeholder="Ваш телефон*">
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="comment" class="form-control" id="comment" rows="4"
+                            placeholder="Комментарий или вопрос*"></textarea>
+                        <small class="form-feedback"> </small>
+                    </div>
+                    <input type="hidden" name="status" value="" class="hidden-status">
+                    <button type="button" class="button-send">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- После отправки формы -->
+<div class="modal fade" id="window_after_sending" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="window_after_sendingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title" id="window_after_sendingLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <h2>Спасибо, что оставили заявку!</h2>
+                <p>В ближайшее время с вами свяжется менеджер.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
-<!-- Modal -->
+<!-- videoModal -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-            <iframe width="100%" height="447" src="https://www.youtube.com/embed/uEMYCfgHgDA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <iframe width="100%" height="447" src="https://www.youtube.com/embed/uEMYCfgHgDA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
         </div>
     </div>
 </div>
@@ -584,6 +665,129 @@
 
 
     <script>
+        // отправка формы с мод окна
+        $('#modalDialog .button-send').on('click', function (e) {
+            sendModalDialogForm('#modalDialog .modalDialogForm', './request/send-consultation.php');
+            return false;
+        });
+
+        function sendModalDialogForm(ajax_form, url) {
+            $.ajax({
+                url: url, //url страницы (action_ajax_form.php)
+                type: "POST", //метод отправки
+                dataType: "html", //формат данных
+                data: $( ajax_form).serialize(),  // Сеарилизуем объект
+                success: function (response) { //Данные отправлены успешно 
+                    let input = $('#modalDialog .modalDialogForm input')
+
+                    for (let i = 0; i < input.length; i++) {
+                        $(input[i]).css('border', '0')
+
+                    }
+                    $("#modalDialog").modal('hide');
+                    $("#window_after_sending").modal('show');
+                },
+                error: function (response, status, error) { // Данные не отправлены
+                    var errors = JSON.parse(response.responseText);
+                    $('#modalDialog .form-feedback').text("");
+                    let input = $('#modalDialog .modalDialogForm input')
+                    
+                    for (let i = 0; i < input.length; i++) {
+                        $(input[i]).css('border','0')
+                    }
+                    console.log();
+                    if (errors.errors) {
+                        errors.errors.forEach(function (data, index) {
+                            var field = Object.getOwnPropertyNames(data);
+                            var value = data[field];
+                            var div = $("#modalDialog #" + field[0]).closest('div');
+
+                            div.children('.form-feedback').text(value);
+                            $("#modalDialog #" + field[0]).css("border", "2px solid #bc1818");
+                            div.children('.form-feedback').css("color", "#bc1818");
+                        });
+                    }
+                }
+            });
+        }
+
+
+        // отправка формы Рассчитать под ключ в РБ
+        $('#modalDialogСalculate .button-send').on('click', function (e) {
+            modalDialogСalculate('#modalDialogСalculate .modalDialogForm', './request/send-consultation.php');
+            return false;
+        });
+
+        function modalDialogСalculate(ajax_form, url) {
+            $.ajax({
+                url: url, //url страницы (action_ajax_form.php)
+                type: "POST", //метод отправки
+                dataType: "html", //формат данных
+                data: $( ajax_form).serialize(),  // Сеарилизуем объект
+                success: function (response) { //Данные отправлены успешно 
+                    let input = $('#modalDialogСalculate .modalDialogForm input')
+
+                    for (let i = 0; i < input.length; i++) {
+                        $(input[i]).css('border', '0')
+
+                    }
+                    $("#modalDialogСalculate").modal('hide');
+                    $("#window_after_sending").modal('show');
+                },
+                error: function (response, status, error) { // Данные не отправлены
+                    var errors = JSON.parse(response.responseText);
+                    $('#modalDialogСalculate .form-feedback').text("");
+                    let input = $('#modalDialogСalculate .modalDialogForm input')
+                    
+                    for (let i = 0; i < input.length; i++) {
+                        $(input[i]).css('border','0')
+                    }
+                    console.log();
+                    if (errors.errors) {
+                        errors.errors.forEach(function (data, index) {
+                            var field = Object.getOwnPropertyNames(data);
+                            var value = data[field];
+                            var div = $("#modalDialogСalculate #" + field[0]).closest('div');
+
+                            div.children(' .form-feedback').text(value);
+                            $("#modalDialogСalculate #" + field[0]).css("border", "2px solid #bc1818");
+                            div.children('.form-feedback').css("color", "#bc1818");
+                        });
+                    }
+                }
+            });
+        }
+        $('#window_after_sending .btn-close').on('click', function () {
+            $("#window_after_sending").modal('hide');
+            location.reload();
+        });
+        // вызов модального окна и меняется текст
+        const modalDialog = document.getElementById('modalDialog')
+        if (modalDialog) {
+            modalDialog.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget
+                const recipient = button.getAttribute('data-bs-whatever');
+                const icon = button.getAttribute('data-bs-icon')
+
+                const modalTitle = modalDialog.querySelector('#modalDialog .modal-title')
+                const modalHidden = modalDialog.querySelector('#modalDialog .modalDialogForm .hidden-status')
+                modalTitle.innerHTML = `${icon} <br> ${recipient}`
+                modalHidden.value = `${recipient}`
+            })
+        }
+        const modalСalculate = document.getElementById('modalDialogСalculate')
+        if (modalСalculate) {
+            modalСalculate.addEventListener('show.bs.modal', event => {
+                const button = event.relatedTarget
+                const recipient = button.getAttribute('data-bs-whatever');
+                const icon = button.getAttribute('data-bs-icon')
+
+                const modalTitle = modalСalculate.querySelector('#modalDialogСalculate .modal-title')
+                const modalHidden = modalСalculate.querySelector('#modalDialogСalculate .modalDialogForm .hidden-status')
+                modalTitle.innerHTML = `${icon} <br> ${recipient}`
+                modalHidden.value = `${recipient}`
+            })
+        }
         //включаются всплыв подсказки
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {

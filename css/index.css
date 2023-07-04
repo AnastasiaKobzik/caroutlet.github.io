@@ -73,6 +73,8 @@
 
 .main-but:hover{
     background-color: #0E1D44;
+    transition: 0.2s;
+    transition-timing-function: linear;
 }
 
 
@@ -247,6 +249,8 @@
 
 .bg-white-items .text-btn .btn:hover {
     background-color: #0E1D44;
+    transition: 0.2s;
+    transition-timing-function: linear;
 }
 
 .bg-white-items .item:not(:last-child){
@@ -381,6 +385,11 @@
     font-weight: 600;
     line-height: 20px;
 }
+.slick-slider.gallery .but:hover{
+    background: #d7e6ff;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
 .slick-dots{
     bottom: -45px;
 }
@@ -479,6 +488,11 @@
     line-height: 20px;
     border-width: 0;
 }
+.slick-slider.reviews .item .but-img .but:hover {
+    background: #d7e6ff;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
 .slick-slider.reviews .item .but-img img{
     width: 110px;
     height: auto;
@@ -531,6 +545,11 @@
     font-weight: 500;
     line-height: 30px;
     text-decoration: none;
+}
+.bg-white-banner .banner .but:hover {
+    background-color: #0E1D44;
+    transition: 0.2s;
+    transition-timing-function: linear;
 }
 .bg-white-banner .banner::after {
     content: '';

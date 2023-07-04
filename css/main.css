@@ -5,6 +5,10 @@ body {
     font-weight: 500;
 }
 
+button:focus,
+.btn:focus{
+    box-shadow: 0 0 0 0;
+}
 /* ---CHAT-BUTTON--- */
 
 .chat-button {
@@ -84,7 +88,11 @@ body {
     padding: 8px 16px;
     color: #8D929F;
 }
-
+.navbar-nav .nav-item .nav-link:hover{
+    color: #25345B;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
 .navbar-nav .nav-item .nav-link.active{
     color: #25345B;
     text-decoration: underline;
@@ -98,7 +106,16 @@ body {
 .navbar-nav .nav-item.select-car a {
     color: #477EEC;
 }
+.navbar-nav .nav-item.select-car:hover{
+    border-color: #477EECB2;
+    
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
 
+.navbar-nav .nav-item.select-car:hover a{
+    color: #477EEC;
+}
 .navbar-nav .nav-item.registration a {
     color: #25345B;
 }
@@ -107,24 +124,23 @@ body {
 .navbar-nav .nav-item.select-car {
     background-color: #fff;
     border-radius: 8px;
-    outline: 2px solid;
+    border: 2px solid;
 }
 
 .navbar-nav .nav-item.registration {
-    outline-color: #87898B80;
+    border-color: #8D929F59;
     margin-right: 10px;
 }
 
-/* .navbar-nav .nav-item.registration a:hover{
-    color: #fff;
-}
+
 .navbar-nav .nav-item.registration:hover {
-    border-color:#0E1D44;
-    background-color: #0E1D44;
-}  */
+    border-color: #8D929FB2;
+    transition: 0.2s;
+    transition-timing-function: linear;
+} 
 
 .navbar-nav .nav-item.select-car {
-    outline-color: #477EEC80;
+    border-color: #477EEC80;
 }
 
 /* кнопка бургер-меню */

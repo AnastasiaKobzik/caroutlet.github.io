@@ -100,6 +100,15 @@
         padding-left: 20px;
         padding-right: 8px;
     }
+    .chat-button{
+        bottom: 2%;
+        right: 3%;
+        width: 80px;
+        height: 80px;
+    }
+    .chats .messengers-chat img{
+        height: 45px;
+    }
 }
 
 @media only screen and (max-width : 480px){
