@@ -94,5 +94,19 @@ $('.slick.block-specialist').slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+            }
+        }
+    ]
     
 });

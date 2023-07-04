@@ -174,6 +174,25 @@
     width: 66%;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
+    overflow: hidden;
+}
+.bg-white-block-two .container-lg .col-md-9{
+    position: relative;
+    z-index: 3;
+}
+.bg-white-block-two .container-lg::before {
+    content: '';
+    position: absolute;
+    background-image: linear-gradient(90deg, #F7F8F9 0%, rgba(247, 247, 248, 0.00) 100%), url(../image/jpeg/about-us.jpg);
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 20px 20px 0;
+    z-index: 1;
 }
 .bg-white-block-two .title{
     color: var(--primary-black, #25345B);
@@ -317,6 +336,9 @@
     margin-bottom: 30px;
     width: 60%;
 }
+.bg-white-contact .time-work .work-text{
+    line-height: 26px;
+}
 .bg-white-contact .time-work .button-call{
     
     padding: 12px 24px;
@@ -384,6 +406,9 @@
 
 .bg-white-social-media{
     margin-bottom: 200px;
+}
+.bg-white-social-media .container-lg.mobile{
+    display: none;
 }
 .bg-white-social-media .container-lg{
     width: 66%;
