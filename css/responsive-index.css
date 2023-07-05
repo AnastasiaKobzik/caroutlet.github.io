@@ -158,7 +158,9 @@
     #videoModal iframe{
         height: 447px;
     }
-    #videoModal .modal-dialog
+    /* #videoModal .modal-dialog{
+        
+    } */
 }
 
 @media only screen and (max-width : 1100px) {
@@ -330,6 +332,7 @@
     .advant .text{
         font-size: 15px;
         margin-bottom: 11px;
+        line-height: 20px;
     }
     .advant .icon_advant{
         height: 36px;
@@ -559,7 +562,9 @@
         height: 150%;
     }
     /* end-bg-main-top */
-
+    .main-but{
+        font-size: 18px;
+    }
 
     /* bg-grey block */
     .bg-grey .advantages{
@@ -576,9 +581,11 @@
 
     
     /* bg-white-items */
-    .bg-white-items .text-btn,
     .bg-white-items .item:nth-child(2) .text-btn{
         padding: 30px 20px 170px 20px;
+    }
+    .bg-white-items .text-btn{
+        padding: 30px 20px 80px 20px;
     }
     .bg-white-items .text-btn .sub-item{
         font-size: 15px;
@@ -586,9 +593,13 @@
     .bg-white-items .text-btn .text{
         font-size: 26px;
         line-height: 32px;
+        margin-bottom: 30px;
+    }
+    .bg-white-items .item:nth-child(3) .text-btn .text{
+        margin-bottom: 20px;
     }
     .bg-white-items .text-btn .sub-items{
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .bg-white-items .item:nth-child(2) .bg-grey.row::before{
         left: 20%;
@@ -622,6 +633,8 @@
     }
     .bg-white-banner .banner .but{
         padding: 12px 20px;
+        font-size: 18px;
+        line-height: 30px;
     }
     .bg-white-banner .banner::after{
         width: 200%;
@@ -630,6 +643,12 @@
         font-size: 24px;
         line-height: 30px;
     }
+    .bg-white-items .item:not(:last-child){
+        margin-bottom: 20px;
+    }
+    .bg-white-items .item:nth-child(2) .text-btn .sub-items{
+        margin-bottom: 10px;
+    }
     #videoModal .modal-dialog{
         width: auto;
         margin-right: auto;
@@ -637,6 +656,13 @@
     }
     #videoModal iframe{
         height: 280px;
+    }
+    
+    .bg-white-popular .title, .bg-white-reviews .title{
+        text-align: center;
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 24px;
     }
 }
 @media only screen and (max-width : 538px){
@@ -671,18 +697,17 @@
         max-width: 160px;
     }
     /* end-bg-grey block */
-    .bg-white-items, .bg-white-popular,
+    .bg-white-items,
     .bg-white-banner{
         margin-bottom: 100px;
     }
-    
-    /* bg-white-items */
-    .bg-white-items .text-btn{
-        padding: 30px 15px 170px 15px;
+    .bg-white-popular{
+        margin-bottom: 120px;
     }
+    /* bg-white-items */
+    
     .bg-white-items .text-btn .sub-item{
         padding: 8px 12px;
-        margin: 0 6px 6px 0;
     }
     .bg-white-items .bg-grey.row .col-md-8{
         padding: 0;
@@ -695,9 +720,6 @@
         height: 445px;
         margin-right: 20px;
         margin-left: 20px;
-    }
-    .bg-white-popular .title, .bg-white-reviews .title{
-        text-align: center;
     }
     .slick-slider.gallery .title-item{
         font-size: 20px;
@@ -845,31 +867,38 @@
         height: 180px;
     }
 }
-@media only screen and (max-width : 350px){
+@media only screen and (max-width : 350px) {
+
     /* bg-grey block */
-    .bg-grey .advantages .advant{
+    .bg-grey .advantages .advant {
         max-width: 140px;
     }
-    .bg-grey .advantages .advant:first-child{
+
+    .bg-grey .advantages .advant:first-child {
         margin-bottom: 30px;
     }
-    .advant .text{
+
+    .advant .text {
         font-size: 13px;
     }
+
     /* end-bg-grey block */
 
     /* bg-white-items */
-    .bg-white-items .item:nth-child(1) .bg-grey.row::after{
+    .bg-white-items .item:nth-child(1) .bg-grey.row::after {
         height: 45%;
     }
-    .bg-white-items .bg-grey.row .col-md-8{
+
+    .bg-white-items .bg-grey.row .col-md-8 {
         background: linear-gradient(180deg, #f7f8f9 60%, transparent 100%);
     }
-    .bg-white-items .item:nth-child(2) .bg-grey.row::before{
+
+    .bg-white-items .item:nth-child(2) .bg-grey.row::before {
         top: 73%;
     }
+
     /* end-bg-white-items */
-    .slick-slider.gallery .item{
+    .slick-slider.gallery .item {
         height: auto;
     }
 }

@@ -146,7 +146,8 @@
                 <div class="row  main-text-but">
                     <div class="col-md-6 col-sm-8">
                         <p class="main-text">CarOutlet — cамый простой и выгодный способ купить автомобиль!</p>
-                        <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💬" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button>
+                        <!-- <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💬" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button> -->
+                        <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#window_after_sending">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
@@ -451,7 +452,7 @@
                     </div>
                     <div class="item">
                         <div class="text-rev">
-                            <p class="text">“Машину брал для себя и рад, что благодаря этим ребятам я так сэкономил.”</p>
+                            <p class="text">“Машину брал для себя и рад, что благодаря этим ребятам я так сэкономил. я так сэкономил. я так”</p>
                             <p class="sub-text">Volkswagen Passat 1.6 TDI Highline</p>
                         </div>
                         <div class="but-img">
@@ -561,11 +562,16 @@
 <div class="modal fade" id="modalDialog" tabindex="-1" aria-labelledby="modalDialogLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title" id="modalDialogLabel">Бесплатная консультация</h1>
+            <div class="modal-header desctop">
+                <h1 class="modal-title" id="modalDialogLabel">Бесплатная консультация</h1> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-header mobile">
+                <img src="./image/logo.svg" alt="carOutlet">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
             </div>
             <div class="modal-body">
+                <h1 class="modal-title mobile">Бесплатная консультация</h1>
                 <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона авто составляет € 5000.</h2>
                <form method="post" class="modalDialogForm">
                     <div class="form-group">
@@ -593,13 +599,34 @@
 <div class="modal fade" id="modalDialogСalculate" tabindex="-1" aria-labelledby="modalDialogСalculateLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header desctop">
                 <h1 class="modal-title" id="modalDialogСalculateLabel">Рассчитать под ключ в РБ</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
             </div>
+            <div class="modal-header mobile">
+                <img src="./image/logo.svg" alt="carOutlet">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
             <div class="modal-body">
-                <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона
-                    авто составляет € 5000.</h2>
+                <h1 class="modal-title mobile">Рассчитать под ключ в РБ</h1>
+                <div class="sub-text">
+                    <div>
+                        <p class="col-9"><span>Итоговая цена в Литве</span></p>
+                        <p class="col-3"><span>€ 2 800</span></p>
+                    </div>
+                    <div>
+                        <p class="col-9">Доставка в Минск</p>
+                        <p class="col-3">≈ € 570</p>
+                    </div>
+                    <div>
+                        <p class="col-9">Растаможка + оформление</p>
+                        <p class="col-3">≈ € 450</p>
+                    </div>
+                    <div>
+                        <p class="col-9"><span>Итого под ключ в РБ</span></p>
+                        <p class="col-3"><span>€ 4 500</span></p>
+                    </div>
+                </div>
                 <form method="post" class="modalDialogForm">
                     <div class="form-group">
                         <img class="icon" src="./image/icon/icon-name.svg"></img>
@@ -625,15 +652,18 @@
 </div>
 <!-- После отправки формы -->
 <div class="modal fade" id="window_after_sending" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="window_after_sendingLabel" aria-hidden="true">
-    <div class="modal-dialog modal-md modal-dialog-centered">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header desctop">
                 <h1 class="modal-title" id="window_after_sendingLabel"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
             </div>
+            <div class="modal-header mobile">
+                <img src="./image/logo.svg" alt="carOutlet">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
             <div class="modal-body">
-                <h2>Спасибо, что оставили заявку!</h2>
-                <p>В ближайшее время с вами свяжется менеджер.</p>
+                <h2>👍🏻 <br> Спасибо! <br><br> Мы скоро с вами свяжемся. </h2>
                 
             </div>
         </div>
@@ -770,8 +800,10 @@
                 const icon = button.getAttribute('data-bs-icon')
 
                 const modalTitle = modalDialog.querySelector('#modalDialog .modal-title')
+                const modalTitleMobile = modalDialog.querySelector('#modalDialog .modal-title.mobile')
                 const modalHidden = modalDialog.querySelector('#modalDialog .modalDialogForm .hidden-status')
                 modalTitle.innerHTML = `${icon} <br> ${recipient}`
+                modalTitleMobile.innerHTML = `${icon} <br> ${recipient}`
                 modalHidden.value = `${recipient}`
             })
         }
@@ -783,8 +815,10 @@
                 const icon = button.getAttribute('data-bs-icon')
 
                 const modalTitle = modalСalculate.querySelector('#modalDialogСalculate .modal-title')
+                const modalTitleMobile2 = modalСalculate.querySelector('#modalDialogСalculate .modal-title.mobile')
                 const modalHidden = modalСalculate.querySelector('#modalDialogСalculate .modalDialogForm .hidden-status')
                 modalTitle.innerHTML = `${icon} <br> ${recipient}`
+                modalTitleMobile2.innerHTML = `${icon} <br> ${recipient}`
                 modalHidden.value = `${recipient}`
             })
         }

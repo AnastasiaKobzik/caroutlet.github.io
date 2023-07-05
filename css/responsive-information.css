@@ -311,6 +311,10 @@
         height: 28px;
         background-size: 28px;
     }
+    .bg-white-information .container-xl{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .bg-white-information .info .sub-title{
         font-size: 18px;
         line-height: 24px;
@@ -445,6 +449,9 @@
     }
     .bg-white-information #item-9 .table-info .col-7{
         width: 65%;
+    }
+    .tooltip-inner{
+        max-width: 335px;
     }
 }
 @media only screen and (max-width : 360px){

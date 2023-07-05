@@ -1587,11 +1587,16 @@
     <div class="modal fade" id="modalDialog" tabindex="-1" aria-labelledby="modalDialogLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header desctop">
                     <h1 class="modal-title" id="modalDialogLabel">Бесплатная консультация</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
+                <div class="modal-header mobile">
+                    <img src="./image/logo.svg" alt="carOutlet">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
                 <div class="modal-body">
+                    <h1 class="modal-title mobile">Бесплатная консультация</h1>
                     <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона
                         авто составляет € 5000.</h2>
                     <form method="post" class="modalDialogForm">
@@ -1620,15 +1625,18 @@
     <!-- После отправки формы -->
     <div class="modal fade" id="window_after_sending" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="window_after_sendingLabel" aria-hidden="true">
-        <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header desctop">
                     <h1 class="modal-title" id="window_after_sendingLabel"></h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
+                <div class="modal-header mobile">
+                    <img src="./image/logo.svg" alt="carOutlet">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
                 <div class="modal-body">
-                    <h2>Спасибо, что оставили заявку!</h2>
-                    <p>В ближайшее время с вами свяжется менеджер.</p>
+                    <h2>👍🏻 <br> Спасибо! <br><br> Мы скоро с вами свяжемся. </h2>
     
                 </div>
             </div>
@@ -1702,9 +1710,11 @@
                 const recipient = button.getAttribute('data-bs-whatever');
                 const icon = button.getAttribute('data-bs-icon')
 
-                const modalTitle = modalDialog.querySelector('.modal-title')
-                const modalHidden = modalDialog.querySelector('.modalDialogForm .hidden-status')
+                const modalTitle = modalDialog.querySelector('#modalDialog .modal-title')
+                const modalTitleMobile = modalDialog.querySelector('#modalDialog .modal-title.mobile')
+                const modalHidden = modalDialog.querySelector('#modalDialog .modalDialogForm .hidden-status')
                 modalTitle.innerHTML = `${icon} <br> ${recipient}`
+                modalTitleMobile.innerHTML = `${icon} <br> ${recipient}`
                 modalHidden.value = `${recipient}`
             })
         }
