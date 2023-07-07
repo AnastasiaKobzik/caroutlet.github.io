@@ -552,7 +552,7 @@
     align-items: center;
     justify-content: center;
 }
-.bg-white-information #item-4 .grey-block:last-child a{
+.bg-white-information #item-4 .grey-block:last-child button{
     display: block;
     padding: 12px 24px;
     color:  #FFF;
@@ -562,7 +562,7 @@
     line-height: 30px;
     border-radius: 8px;
     background:  #25345B;
-    text-decoration: none;
+    border: 0;
 }
 
 /* END-ДЕПОЗИТНАЯ ПРОГРАММА */
@@ -577,7 +577,7 @@
 .bg-white-information #item-7 img,
 .bg-white-information #item-8 img,
 .bg-white-information #item-10 img,
-.bg-white-information #item-11 img{
+.bg-white-information #item-9 img{
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -657,8 +657,7 @@
 .bg-white-information #item-7 .text,
 .bg-white-information #item-8 .text,
 .bg-white-information #item-9 .text,
-.bg-white-information #item-10 .text,
-.bg-white-information #item-11 .text{
+.bg-white-information #item-10 .text{
     color: #25345B;
     font-size: 18px;
     font-style: normal;
@@ -675,8 +674,7 @@
 .bg-white-information #item-7 .text span,
 .bg-white-information #item-8 .text span,
 .bg-white-information #item-9 .text span,
-.bg-white-information #item-10 .text span,
-.bg-white-information #item-11 .text span{
+.bg-white-information #item-10 .text span{
     font-weight: 600;
 }
 /* END-МЕНЕДЖЕРЫ CAROUTLET */
@@ -708,7 +706,7 @@
     margin-bottom: 40px;
 }
 .bg-white-information #item-8 .bg-white,
-.bg-white-information #item-11 .bg-white{
+.bg-white-information #item-9 .bg-white{
     background: #fff;
     padding: 40px;
     border-radius: 20px;
@@ -777,7 +775,7 @@
     margin-bottom: 40px;
 }
 .bg-white-information #item-10 img,
-.bg-white-information #item-11 img{
+.bg-white-information #item-9 img{
     margin-bottom: 30px;
 }
 .bg-white-information #item-10 .button{
@@ -807,11 +805,11 @@
 .bg-white-information #item-11 .text:last-child{
     margin-bottom: 40px;
 }
-.bg-white-information #item-11 .bg-white div>.text{
+.bg-white-information #item-9 .bg-white div>.text{
     margin-bottom: 24px;
     line-height: 30px;
 }
-.bg-white-information #item-11 .bg-white div:last-child>.text{
+.bg-white-information #item-9 .bg-white div:last-child>.text{
     margin-bottom: 0;
 }
 /* END-ТАМОЖЕННОЕ ОФОРМЛЕНИЕ*/

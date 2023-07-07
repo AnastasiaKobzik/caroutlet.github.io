@@ -82,7 +82,7 @@
     footer .block-info .info:last-child{
         margin-top: 40px;
     }
-    footer .block-info .info a{
+    footer .block-info .info .tel-number-row{
         border-radius: 8px;
         background: var(--light-gray-2, #EEF0F3);
         padding: 6px 18px;
@@ -102,12 +102,33 @@
     }
     .chat-button{
         bottom: 2%;
-        right: 3%;
-        width: 80px;
-        height: 80px;
+        right: 2%;
+    }
+    .chat-button .ellipse-light-blue{
+        transform: scale(.95);
+        animation: pulse 3s ease-in-out infinite;
+    }
+    @keyframes pulse {
+        0% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 #477eec49;
+            background: #477eec49;
+        }
+        50% {
+            transform: scale(1);
+            box-shadow: 0 0 0 10px #477eec00;
+            background: #477eec00;
+        }
+        100% {
+            transform: scale(0.95);
+            box-shadow: 0 0 0 0 #477eec00;
+            background: #477eec00;
+        }
     }
     .chats .messengers-chat img{
-        height: 45px;
+        height: 40px;
+        width: 40px;
+        margin-right: 12px;
     }
 }
 

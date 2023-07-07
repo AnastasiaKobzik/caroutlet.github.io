@@ -59,12 +59,11 @@
 
 /* ---end-bg-main-top--- */
 .main-block-contact .container-lg{
-    width: 55%;
+    width: 45%;
 }
 .main-block-contact .buttons{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 .main-block-contact .scroll::-webkit-scrollbar{

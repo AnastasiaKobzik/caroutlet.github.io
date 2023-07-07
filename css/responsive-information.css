@@ -115,8 +115,7 @@
     .bg-white-information #item-3, .bg-white-information #item-4,
     .bg-white-information #item-5, .bg-white-information #item-6,
     .bg-white-information #item-7, .bg-white-information #item-8,
-    .bg-white-information #item-9, .bg-white-information #item-10
-    .bg-white-information #item-11{
+    .bg-white-information #item-9, .bg-white-information #item-10{
         margin-bottom: 130px;
     }
     .bg-white-information #item-3 .cards .card .up{
@@ -149,8 +148,7 @@
     .bg-white-information #item-3, .bg-white-information #item-4,
     .bg-white-information #item-5, .bg-white-information #item-6,
     .bg-white-information #item-7, .bg-white-information #item-8,
-    .bg-white-information #item-9, .bg-white-information #item-10
-    .bg-white-information #item-11{
+    .bg-white-information #item-9, .bg-white-information #item-10{
         margin-bottom: 120px;
     }
     .bg-white-information #item-2 .cards .card,
@@ -158,7 +156,7 @@
     .bg-white-information #item-4 .grey-block,
     .bg-white-information #item-4>.sub-title,
     .bg-white-information #item-8 .bg-white, 
-    .bg-white-information #item-11 .bg-white,
+    .bg-white-information #item-9 .bg-white,
     .bg-white-information #item-9 .bg-grey{
         padding: 30px;
     }
@@ -206,6 +204,14 @@
         z-index: 0;
         top: 42px;
     }
+    .bg-white-information #item-9.info .title{
+        color: #25345B;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38px;
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
@@ -224,7 +230,7 @@
     }
     .bg-white-information #item-2 .cards .card, .bg-white-information #item-7 .bg-grey,
     .bg-white-information #item-4 .grey-block, .bg-white-information #item-4>.sub-title,
-    .bg-white-information #item-8 .bg-white, .bg-white-information #item-11 .bg-white,
+    .bg-white-information #item-8 .bg-white, .bg-white-information #item-9 .bg-white,
     .bg-white-information #item-9 .bg-grey, 
     .bg-white-information #item-4 .accordion-body>.sub-title, .bg-white-information #item-4 .white-block,
     .bg-white-information #item-5 .grey-block{
@@ -258,7 +264,7 @@
     }
     .bg-white-information #item-5 img, .bg-white-information #item-6 img, 
     .bg-white-information #item-7 img, .bg-white-information #item-8 img, 
-    .bg-white-information #item-10 img, .bg-white-information #item-11 img{
+    .bg-white-information #item-10 img, .bg-white-information #item-9 img{
         margin-bottom: 40px;
         border-radius: 20px;
     }
@@ -345,8 +351,7 @@
     .bg-white-information #item-3, .bg-white-information #item-4,
     .bg-white-information #item-5, .bg-white-information #item-6,
     .bg-white-information #item-7, .bg-white-information #item-8,
-    .bg-white-information #item-9, .bg-white-information #item-10,
-    .bg-white-information #item-11{
+    .bg-white-information #item-9, .bg-white-information #item-10{
         margin-bottom: 100px;
     }
     .bg-white-information #item-2 .cards{
@@ -405,7 +410,7 @@
         margin-bottom: 30px;
     }
     .bg-white-information #item-10 img,
-    .bg-white-information #item-11 img{
+    .bg-white-information #item-9 img{
         margin-bottom: 20px;
     }
     .bg-white-information #item-10.info .blue-block {
@@ -419,6 +424,11 @@
         font-size: 26px;
         line-height: 32px;
         padding-bottom: 4px;
+    }
+    .bg-white-information #item-9.info .title{
+        font-size: 26px;
+        line-height: 32px;
+        margin-bottom: 20px;
     }
     .bg-white-information .info .example-calculation .item-example .row-item .but,
     .bg-white-information #item-5 .step>p{

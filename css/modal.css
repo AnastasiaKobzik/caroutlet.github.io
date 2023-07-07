@@ -10,14 +10,19 @@ button.btn-close:focus{
 }
 #modalDialog .modal-content,
 #window_after_sending .modal-content,
-#modalDialogСalculate .modal-content{
+#modalDialogСalculate .modal-content,
+#modalReviews .modal-content,
+#modalSeeConditions .modal-content{
     border-radius: 20px;
     background: #EDF2FD;
     position: relative;
     overflow: hidden;
 }
 #modalDialog .modal-content::after,
-#modalDialogСalculate .modal-content::after{
+#modalDialogСalculate .modal-content::after,
+#window_after_sending .modal-content::after,
+#modalReviews .modal-content::after,
+#modalSeeConditions .modal-content::after{
     content: '';
     background: url(../image/icon/ellipse-blue.svg);
     background-repeat: no-repeat;
@@ -29,21 +34,12 @@ button.btn-close:focus{
     right: -80%;
     z-index: 1;
 }
-#window_after_sending .modal-content::after{
-    content: '';
-    background: url(../image/icon/ellipse-blue.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 300%;
-    height: 300%;
-    bottom: -40%;
-    right: -80%;
-    z-index: 1;
-}
+
 #modalDialog .modal-content .modal-header,
 #window_after_sending .modal-content .modal-header,
-#modalDialogСalculate .modal-content .modal-header{
+#modalDialogСalculate .modal-content .modal-header,
+#modalReviews .modal-content .modal-header,
+#modalSeeConditions .modal-content .modal-header{
     align-items: flex-start;
     padding: 20px 20px 16px 20px;
     border-bottom: 0;
@@ -51,6 +47,8 @@ button.btn-close:focus{
     z-index: 2;
 }
 #modalDialog .modal-content .modal-header.mobile,
+#modalReviews .modal-content .modal-header.mobile,
+#modalSeeConditions .modal-content .modal-header.mobile,
 #modalDialogСalculate .modal-content .modal-header.mobile,
 #window_after_sending .modal-content .modal-header.mobile{
     display: none;
@@ -68,6 +66,23 @@ button.btn-close:focus{
     line-height: 32px;
 }
 
+#modalReviews .modal-content .modal-body p{
+    display: none;
+    color:  #25345B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+#modalReviews .modal-content .modal-body img{
+    width: 60%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+}
 #window_after_sending .modal-body{
     padding-top: 208px;
     padding-bottom: 260px;
@@ -75,10 +90,42 @@ button.btn-close:focus{
     z-index: 2;
 }
 #modalDialog .modal-content .modal-body,
-#modalDialogСalculate .modal-content .modal-body{
+#modalDialogСalculate .modal-content .modal-body,
+#modalReviews .modal-body{
     padding: 0 110px 60px 110px;
     position: relative;
     z-index: 2;
+}
+#modalSeeConditions .modal-body{
+    padding: 0 40px 60px 40px;
+    position: relative;
+    z-index: 2;
+}
+#modalSeeConditions .modal-body .text{
+    color:  #25345B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+#modalSeeConditions .modal-body .text span.sub{
+    margin-left: 15px;
+}
+#modalSeeConditions .modal-body .text a{
+    color: #25345B;
+}
+#modalSeeConditions .modal-body div > .text:last-child{
+    margin-bottom: 0;
+}
+#modalSeeConditions .modal-body>div{
+    margin-bottom: 30px;
+}
+#modalSeeConditions .modal-body>div:last-child{
+    margin-bottom: 0;
+}
+#modalSeeConditions .modal-body .text span{
+    font-weight: 600;
 }
 #modalDialog .modal-content .modal-body .modal-title.mobile,
 #modalDialogСalculate .modal-content .modal-body .modal-title.mobile,
@@ -96,14 +143,20 @@ button.btn-close:focus{
     opacity: 0.7;
     margin-bottom: 40px;
 }
-#modalDialogСalculate .modal-content .modal-body .sub-text{
-    display: flex;
-    flex-direction: column;
-    padding: 0 40px;
-    width: 320px;
-    margin: 0 auto 18px auto;
+ #modalDialogСalculate .modal-content .modal-body .sub-text{
+    color:  #25345B;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.7;
+    margin-bottom: 40px;
 }
-#modalDialogСalculate .modal-content .modal-body .sub-text > div{
+#modalDialogСalculate .modal-content .modal-body .sub-text>span{
+    white-space: nowrap;
+}
+/*#modalDialogСalculate .modal-content .modal-body .sub-text > div{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,7 +174,7 @@ button.btn-close:focus{
 }
 #modalDialogСalculate .modal-content .modal-body .sub-text>div>p span{
     font-weight: 600;
-}
+} */
 #modalDialog .modal-content form,
 #modalDialogСalculate .modal-content form{
     width: 320px;
@@ -233,7 +286,22 @@ textarea::-moz-placeholder {
         bottom: -90%;
         right: -30%;
     }
-    
+    #modalReviews .modal-body{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+    #modalSeeConditions .modal-body{
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+    #modalSeeConditions .modal-body .text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #modalReviews .modal-content .modal-body img{
+        width: 100%;
+    }
 }
 @media only screen and (max-width : 572px){
     #modalDialog .modal-content::after,
@@ -257,9 +325,13 @@ textarea::-moz-placeholder {
     #modalDialog .modal-dialog-centered,
     #modalDialogСalculate .modal-dialog-centered,
     #window_after_sending .modal-dialog-centered,
+    #modalReviews .modal-dialog-centered,
+    #modalSeeConditions .modal-dialog-centered,
     #modalDialog .modal-content,
     #modalDialogСalculate .modal-content,
-    #window_after_sending .modal-content{
+    #window_after_sending .modal-content,
+    #modalReviews .modal-content,
+    #modalSeeConditions .modal-content{
         height: 100%;
         margin: 0;
     }
@@ -269,22 +341,29 @@ textarea::-moz-placeholder {
     }
     #modalDialog .modal-content,
     #window_after_sending .modal-content,
-    #modalDialogСalculate .modal-content{
+    #modalDialogСalculate .modal-content,
+    #modalReviews .modal-content,
+    #modalSeeConditions .modal-content{
         border-radius: 0px;
     }
     #modalDialog .modal-content .modal-header .modal-title,
     #modalDialogСalculate .modal-content .modal-header .modal-title,
     #window_after_sending .modal-body h2,
     #modalDialog .modal-content .modal-body .sub-title,
-    #modalDialogСalculate .modal-content .modal-body .sub-title{
+    #modalDialogСalculate .modal-content .modal-body .sub-title,
+    #modalDialogСalculate .modal-content .modal-body .sub-text{
         text-align: left;
     }
     #modalDialog .modal-content .modal-header.desctop,
+    #modalReviews .modal-content .modal-header.desctop,
+    #modalSeeConditions .modal-content .modal-header.desctop,
     #modalDialogСalculate .modal-content .modal-header.desctop,
     #window_after_sending .modal-content .modal-header.desctop{
         display: none;
     }
     #modalDialog .modal-content .modal-header.mobile,
+    #modalReviews .modal-content .modal-header.mobile,
+    #modalSeeConditions .modal-content .modal-header.mobile,
     #modalDialogСalculate .modal-content .modal-header.mobile,
     #window_after_sending .modal-content .modal-header.mobile{
         display: flex;
@@ -306,13 +385,22 @@ textarea::-moz-placeholder {
     }
     #modalDialog .modal-content .modal-header,
     #window_after_sending .modal-content .modal-header,
-    #modalDialogСalculate .modal-content .modal-header{
+    #modalDialogСalculate .modal-content .modal-header,
+    #modalReviews .modal-body .modal-header,
+    #modalSeeConditions .modal-content .modal-header{
         padding-top: 25px;
         padding-bottom: 25px;
     }
     #modalDialog .modal-content .modal-body,
-    #modalDialogСalculate .modal-content .modal-body{
+    #modalDialogСalculate .modal-content .modal-body,
+    #modalReviews .modal-content .modal-body,
+    #modalSeeConditions .modal-content .modal-body{
         padding-top: 40px;
+    }
+    #modalReviews .modal-content .modal-body,
+    #modalSeeConditions .modal-content .modal-body{
+        padding-right: 20px;
+        padding-left: 20px;
     }
     #modalDialog .modal-content::after,
     #window_after_sending .modal-content::after,

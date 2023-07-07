@@ -44,7 +44,7 @@ $('.slick-slider.gallery').slick({
     
     
 });
-    // autoplay: true,autoplaySpeed: 1000
+//    
 
 //отзывы
 $('.slick-slider.reviews').slick({
@@ -84,6 +84,8 @@ $('.slick-slider.reviews').slick({
         }
     ]
 });
+// 
+
 
 //контакты
 $('.slick.block-specialist').slick({

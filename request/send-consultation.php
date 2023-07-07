@@ -21,6 +21,7 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
                     'name' => $_POST['name'], //ФИО
                     'comment' => $_POST['comment'],
                     'status' => $_POST['status'],
+                    'car-model' => $_POST['car-model'],
                 ];
                 //ОТПРАВКА НА ПОЧТУ
                 $emails = file(__DIR__ . '../email.txt');
@@ -33,8 +34,12 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
                     $value = $_POST[$parameter];
                     return "$name: $value\r\n";
                 }
+                if(!empty($_POST['car-model'])){
+                    $message = AsField("Имя", "name").AsField("Номер телефона", "phone").AsField("Комментарий", "comment").AsField("Причина отправки заявки", "status").AsField("Марка авто", "car-model");
+                }else{
+                    $message = AsField("Имя", "name").AsField("Номер телефона", "phone").AsField("Комментарий", "comment").AsField("Причина отправки заявки", "status");
+                }
                 
-                $message = AsField("Имя", "name").AsField("Номер телефона", "phone").AsField("Комментарий", "comment").AsField("Причина отправки заявки", "status");
                         
                 $server = $_SERVER['HTTP_HOST'];
                 $ip = $_SERVER['REMOTE_ADDR'];
