@@ -185,14 +185,24 @@
     margin-bottom: 160px;
 }
 .bg-white-information .info .sub-title{
-    color: var(--primary-black, #25345B);
+    color: #25345B;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: 26px;
     margin-bottom: 40px;
 }
-
+.bg-white-information .info .sub-title.big{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+.bg-white-information .info .sub-title img{
+    height: 20px;
+    width: auto;
+    vertical-align: baseline;
+}
 .bg-white-information #item-1 .text:last-child:last-child{
     margin-bottom: 40px;
 }
@@ -286,6 +296,11 @@
     line-height: 26px;
     margin-bottom: 0;
 }
+.bg-white-information .info .blue-block p img {
+    height: 20px;
+    width: auto;
+    vertical-align: baseline;
+}
 .bg-white-information .info .blue-block button,
 .bg-white-information .info .blue-block a{
     color: #FFF;
@@ -298,10 +313,17 @@
     background:  #25345B;
     border: 0;
     text-decoration: none;
+    display: block;
+}
+.bg-white-information .info .blue-block button img,
+.bg-white-information .info .blue-block a img {
+    height: 25px;
+    vertical-align: sub;
+    margin-right: 5px;
 }
 .bg-white-information .info .blue-block button:hover,
+.form-calculator .button-action:hover,
 .bg-white-information .info .blue-block a:hover,
-.bg-white-information #item-4 .grey-block:last-child a:hover,
 .bg-white-information #item-10 .button button:hover{
     background: #0E1D44;
     transition: 0.2s;
@@ -444,6 +466,7 @@
     font-weight: 400;
     line-height: 21px;
     margin-bottom: 0;
+    text-align: left;
 }
 
 .bg-white-information #item-3 .cards .card .card-title{
@@ -453,6 +476,12 @@
     font-weight: 700;
     line-height: 32px;
     margin-bottom: 0;
+}
+.bg-white-information #item-3 .cards .card .card-title img {
+    height: 24px;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: baseline;
 }
 .bg-white-information #item-3 .cards .card:nth-child(2) .card-subtitle,
 .bg-white-information #item-3 .cards .card:nth-child(2) .up{
@@ -480,6 +509,12 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 24px;
+}
+.bg-white-information #item-3 .cards .card .card-text img {
+    height: 18px;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: baseline;
 }
 .bg-white-information #item-3 .cards .card .card-text:last-child{
     margin-bottom: 0;
@@ -519,6 +554,12 @@
     line-height: 26px;
     margin-bottom: 18px;
 }
+.bg-white-information #item-4 .grey-block>.text img,
+.bg-white-information #item-5 .grey-block>.text img {
+    height: 20px;
+    width: auto;
+    vertical-align: baseline;
+}
 .bg-white-information #item-4 .grey-block>.text span,
 .bg-white-information #item-5 .grey-block>.text span{
     font-weight: 700;
@@ -543,16 +584,91 @@
     font-weight: 700;
 }
 
-.bg-white-information #item-4 .grey-block:last-child>.text{
+.bg-white-information #item-4 .grey-block:last-child>.text:first-child{
     font-weight: 600;
     margin-bottom: 20px;
 }
-.bg-white-information #item-4 .grey-block:last-child>div{
+/* .bg-white-information #item-4 .grey-block:last-child>div{
     display: flex;
     align-items: center;
     justify-content: center;
+} */
+.bg-white-information #item-4 .grey-block .conditions-button{
+    width: 100%;
+    background: #EEF0F3;
+    padding: 13px 20px;
+    color: #25345B;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    border-radius: 12px;
+    text-align: left;
+    border: 0;
+    display: flex;
+    align-items: center;
 }
-.bg-white-information #item-4 .grey-block:last-child button{
+.conditions-button::after {
+    flex-shrink: 0;
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='rgba(141, 146, 159, 1)' ><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z' /></svg>");
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+    margin-left: auto;
+    content: "";
+    background-repeat: no-repeat;
+    transition: transform .2s ease-in-out;
+}
+.conditions-button:not(.collapsed)::after {
+    transform: rotate(-180deg);
+}
+#conditions .accordion-body .text {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #25345B;
+    margin-bottom: 18px;
+}
+#conditions .accordion-body{
+    padding-left: 0;
+    padding-right: 0;
+}
+#conditions .accordion-body .text>span{
+    font-weight: 600;
+}
+#conditions .accordion-body .text>a:hover{
+    background: transparent;
+}
+#conditions .accordion-body .text>a{
+    word-wrap: break-word;
+}
+#conditions .accordion-body div>.text:last-child{
+    margin-bottom: 0;
+}
+#conditions .accordion-body div.txt:nth-child(1){
+    margin-bottom: 50px;
+}
+#conditions .accordion-body div.txt{
+    margin-bottom: 40px;
+}
+#conditions .accordion-body .text.sub{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+#conditions .accordion-body .text.blue-href>a{
+    color: #477EEC;
+}
+#conditions .accordion-body ol{
+    padding-left: 25px;
+}
+
+.bg-white-information #item-4 .grey-block .but-dogovor{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.bg-white-information #item-4 .grey-block .but-dogovor>a{
     display: block;
     padding: 12px 24px;
     color:  #FFF;
@@ -563,8 +679,19 @@
     border-radius: 8px;
     background:  #25345B;
     border: 0;
+    cursor: pointer;
+    text-decoration: none;
 }
-
+.bg-white-information #item-4 .grey-block .but-dogovor>a:hover{
+    background: #0E1D44;
+    transition: 0.2s;
+    transition-timing-function: linear;
+}
+.bg-white-information #item-4 .grey-block .but-dogovor> a img {
+    height: 25px;
+    vertical-align: sub;
+    margin-right: 5px;
+}
 /* END-ДЕПОЗИТНАЯ ПРОГРАММА */
 
 
@@ -572,12 +699,18 @@
 .bg-white-information #item-5{
     margin-bottom: 160px;
 }
-.bg-white-information #item-5 img,
-.bg-white-information #item-6 img,
-.bg-white-information #item-7 img,
-.bg-white-information #item-8 img,
-.bg-white-information #item-10 img,
-.bg-white-information #item-9 img{
+.bg-white-information #item-5>img,
+.bg-white-information #item-6>img,
+.bg-white-information #item-7>img,
+.bg-white-information #item-8>img,
+.bg-white-information #item-10>img,
+.bg-white-information #item-9>img,
+.bg-white-information #item-5 .accordion-body>img,
+.bg-white-information #item-6 .accordion-body>img,
+.bg-white-information #item-7 .accordion-body>img,
+.bg-white-information #item-8 .accordion-body>img,
+.bg-white-information #item-10 .accordion-body>img,
+.bg-white-information #item-9 .accordion-body>img{
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -664,6 +797,17 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 18px;
+}
+.bg-white-information #item-1 .text img,
+.bg-white-information #item-6 .text img,
+.bg-white-information #item-7 .text img,
+.bg-white-information #item-8 .text img,
+.bg-white-information #item-9 .text img,
+.bg-white-information #item-10 .text img{
+    height: 20px;
+    width: auto;
+    margin-right: 5px;
+    vertical-align: sub;
 }
 .bg-white-information #item-6 .text:last-child,
 .bg-white-information #item-7 .text:last-child{
@@ -771,40 +915,64 @@
 
 
 /* КРИДИТ ЛИЗИНГ*/
-.bg-white-information #item-10 .text{
+
+.bg-white-information #item-10>img,
+.bg-white-information #item-9>img{
     margin-bottom: 40px;
 }
-.bg-white-information #item-10 img,
-.bg-white-information #item-9 img{
-    margin-bottom: 30px;
+.bg-white-information #item-10 .accordion-body>img{
+    margin-bottom: 40px;
 }
-.bg-white-information #item-10 .button{
+.bg-white-information #item-10 .accordion-body>img.mobile{
+    display: none;
+}
+.bg-white-information #item-10 .three-blocks{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
-.bg-white-information #item-10 .button button {
-    color: #FFF;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
+.bg-white-information #item-10 .three-blocks >.block{
+    padding: 13px 24px;
+    border-radius: 16px;
+    background: #EDF2FD;
+    font-size: 18px;
     line-height: 30px;
-    padding: 12px 24px;
-    border-radius: 8px;
-    background: #25345B;
-    border: 0;
+    font-weight: 600;
+    color: #477EEC;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+}
+.bg-white-information #item-10 .three-blocks>.block:last-child{
+    margin-right: 0;
+}
+.bg-white-information #item-10 .three-blocks>.block>img{
+    height: 28px;
+    width: auto;
+    margin-right: 12px;
+}
+.bg-white-information #item-10 .three-blocks>.block>p{
+    margin-bottom: 0;
+}
+.bg-white-information #item-10  .mb-sub-title > .sub-title {
+    margin-bottom: 20px;
+}
+.bg-white-information #item-10 .mb-div {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 /* END-КРИДИТ ЛИЗИНГ*/
 
 
 /* ТАМОЖЕННОЕ ОФОРМЛЕНИЕ*/
-.bg-white-information #item-11{
+/* .bg-white-information #item-11{
     margin-bottom: 180px;
 }
 .bg-white-information #item-11 .text:last-child{
     margin-bottom: 40px;
-}
+} */
 .bg-white-information #item-9 .bg-white div>.text{
     margin-bottom: 24px;
     line-height: 30px;
@@ -850,3 +1018,158 @@
 #accordionExample{
     margin-bottom: 60px;
 }
+
+
+/* ТАМОЖЕННЫЙ КАЛЬКУЛЯТОР */
+#customs-calculator{
+    padding: 40px;
+    background: #477EEC;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+#customs-calculator h4.title{
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 35px;
+}
+.form-calculator .row-form{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+.form-calculator .row-form .form-group {
+    width: 265px;
+    margin-right: 20px;
+}
+
+.form-calculator .row-form .form-group:last-child{
+    margin-right: 0;
+}
+.form-calculator .row-form .form-group.all-width{
+    width: 100%;
+}
+.form-calculator .form-group label{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+.form-calculator .form-group label.form-check-label{
+    font-weight: 400;
+}
+.form-calculator .form-group label>button{
+    height: 24px;
+    width: 24px;
+    background: transparent;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #fff;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+.form-calculator .form-group label>button:hover{
+    opacity: 1;
+}
+.form-calculator .form-group .form-control{
+    padding: 16px 12px;
+    border-radius: 8px;
+    background-color: #fff;
+    border: 0;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #636467;
+}
+.form-calculator .form-group .form-select{
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' ><path fill='none' stroke='rgba(37, 52, 91, 1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6' /></svg>");
+    cursor: pointer;
+}
+.form-calculator .form-group .form-control::placeholder {
+    color: #8D929F;
+}
+.form-calculator .button-action{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    background: #25345B;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: 0;
+    color: #fff;
+}
+#calc_fuel_visible{
+    display: none;
+}
+
+/* КАСТОМНЫЙ RADIOBUTTON */
+.form-calculator .form-group .form-check{
+    padding-left: 0;
+}
+.form-calculator .form-group .form-check-input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.form-calculator .form-group .form-check-input+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.form-calculator .form-group .form-check-input+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50%;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+.form-calculator .form-group .form-check-input.checkbox+label::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border-radius: 6px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+/* стили при наведении курсора на радио */
+.form-calculator .form-group .form-check-input:not(:disabled):not(:checked)+label:hover::before {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.form-calculator .form-group .form-check-input:checked+label::before {
+    border-color: #fff;
+    background-color: #fff;
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='-3 -3 6 6' ><circle r='3' fill='rgba(37, 52, 91, 1)' /></svg>");
+}
+.form-calculator .form-group .form-check-input.checkbox:checked+label::before{
+    background-image: url("data: image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' ><path fill='none' stroke='rgba(37, 52, 91, 1)' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6' /></svg>");
+}
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled+label::before {
+    background-color: rgba(255, 255, 255, 0.25);
+        border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* ------- */

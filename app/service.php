@@ -5,14 +5,16 @@ class ValidateEmpty{
 
 	function validate (array $request){
 		
-        if (!isset($request['phone']) || empty($request['phone'])) {
-            $this->errorsEmpty[]['phone'] = 'Введите номер телефона';
-        }
 
         if (!isset($request['name']) || empty($request['name'])) {
             $this->errorsEmpty[]['name'] = 'Введите Ваше имя';
         }
-
+        if (!isset($request['phone']) || empty($request['phone'])) {
+            $this->errorsEmpty[]['phone'] = 'Введите номер телефона';
+        }
+        if (!isset($request['agreement']) || empty($request['agreement'])) {
+            $this->errorsEmpty[]['agreement'] = 'Согласитесь с условиями';
+        }
         return $this->errorsEmpty;
 	}
 }

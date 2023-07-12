@@ -154,11 +154,12 @@
     background: #e9ebed;
     margin-right: 10px;
     margin-bottom: 10px;
-    color: var(--primary-black, #25345B);
+    color: #25345B;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: 20px;
+    cursor: pointer;
 }
 
 .bg-white-items .bg-grey.row{
@@ -167,6 +168,76 @@
     z-index: 4;
     overflow: hidden;
 }
+.bg-white-items .item .sub-item:hover{
+    color: #fff;
+    background-color: #477EEC;
+}
+.bg-white-items .item:nth-child(1) .sub-item:hover::before{
+    background: #f7f8f9e6;
+    color: #25345B;
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 20px 20px 0;
+    z-index: -1;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    padding: 80px 90px;
+}
+.bg-white-items .item:nth-child(1) .sub-item:nth-child(1):hover::before {
+    content: 'Гарантировано приобретение автомобиля с достоверным пробегом и подлинной сервисной историей в единой электронной сервисной базе. За предоставление ложной информации о пробеге УГОЛОВНАЯ ОТВЕТСТВЕННОСТЬ !';
+}
+.bg-white-items .item:nth-child(1) .sub-item:nth-child(2):hover::before{
+    content: 'Не бывший в ДТП - исключена потеря геометрии несущих элементов кузова и сработка системам безопасности (подушки и т.п.), и не имеющий скрытых дефектов. Кроме указанных лотов в аварийном состоянии.';
+}
+.bg-white-items .item:nth-child(1) .sub-item:nth-child(3):hover::before {
+    content: 'Соответствующий Европейским нормам безопасности и тех состояния. Автомобиль, хотя бы единожды не обслуженный в ОФИЦИАЛЬНОМ СЕРВИСНОМ ЦЕНТРЕ ПРОИЗВОДИТЕЛЯ, на аукцион CarOutlet не выставляется';
+}
+.bg-white-items .item:nth-child(1) .sub-item:nth-child(4):hover::before {
+    content: 'Весь период эксплуатации, обслуживаемый только в Официальных СЦ, строго по регламенту, с использованием расходников исключительно от производителя, что обеспечивает высочайшую остаточную ресурсность. ';
+}
+.bg-white-items .item:nth-child(1) .sub-item:nth-child(5):hover::before {
+    content: 'В случае выявлении скрытых дефектов двигателя и коробки (основание – Акт СЦ производителя), обеспечивается на выбор: финансовая компенсация ущерба, возврат стоимости, либо приобретение иного автомобиля. ';
+}
+
+.bg-white-items .item:nth-child(2) .sub-item:hover::before {
+    background: #f7f8f9e6;
+    color: #25345B;
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 20px 20px 0;
+    z-index: 3;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    padding: 100px 90px;
+}
+.bg-white-items .item:nth-child(2) .sub-item:nth-child(1):hover::before {
+    content: 'Отсутствие финансовых рисков, т.к. исключены операции с наличными деньгами. Все финансовые операции осуществляются банковскими переводами - не надо прятать, возить, рисковать и волноваться';
+}
+
+.bg-white-items .item:nth-child(2) .sub-item:nth-child(2):hover::before {
+    content: 'Формирование минимальной цены автомобилей на CarOutlet.eu гарантировано жёсткой конкуренцией между продавцами на аукционе - 7000 автомобилей в неделю со всей Европы.';
+}
+
+.bg-white-items .item:nth-child(2) .sub-item:nth-child(3):hover::before {
+    content: 'Абсолютная финансовая прозрачность сделки на всех этапах приобретения авто. Возможность выбора удобной для вас логистики - доставка в Вильнюс, на таможню РБ или к вашему дому в любой точке РБ';
+}
+
+.bg-white-items .item:nth-child(2) .sub-item:nth-child(4):hover::before {
+    content: 'Юридическая чистота купленного вами авто - исключены ошибки и подлог в документах, номерах узлов, агрегатов и кузова, все возможные риски на всех этапах полностью застрахованы';
+}
+
+.bg-white-items .item:nth-child(2) .sub-item:nth-child(5):hover::before {
+    content: 'Полная уверенность в точности конечной цены до цента, начиная с цены выигранного лота, заканчивая стоимостью доставки (включая сумму всех сборов, цены страховки и стоимости транзитных номеров).';
+}
+
 
 .bg-white-items .item:nth-child(1) .bg-grey.row::after{
     content: '';
@@ -178,7 +249,7 @@
     right: 0;
     background-size: cover;
     border-radius: 0 20px 20px 0;
-    z-index: -1;
+    z-index: -2;
 }
 
 .bg-white-items .item:nth-child(2) .bg-grey{
@@ -307,6 +378,75 @@
     padding: 10px 12px;
     border-radius: 8px;
 }
+.slick-dots{
+    bottom: -45px;
+}
+ .slick-dots li button:before{
+    font-size: 8px;
+    color: #d5d6d8;
+    opacity: 1;
+}
+.slick-dots li.slick-active button:before{
+    color: #25345B;
+    opacity: 1;
+} 
+/*СВОИ DOTS*/
+
+.slick_dots{
+    display: none;
+    list-style: none;
+    margin-top: 24px;
+    padding-left: 0;
+}
+.slick_dots .slick-list{
+    width: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* .slick_dots.gallery .slick-track {
+    transform: none !important;
+} */
+/**/ .slick_dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick_dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick_dots li button:before {
+    font-family: 'slick';
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    font-size: 8px;
+    color: #d5d6d8;
+    opacity: 1;
+}
+.slick_dots .slick-dot.slick-slide.slick-current.slick-active>button::before {
+    color: #25345B;
+    opacity: 1;
+} 
+
 /* всплыващая подсказка */
 .tooltip-inner {
     background-color: transparent;
@@ -339,7 +479,9 @@
 .tooltip-inner .info-block .f-row-info div:not(:last-child) {
     margin-bottom: 2px;
 }
-
+.tooltip-inner .info-block .f-row-info .price-info{
+    white-space: nowrap;
+}
 .tooltip-inner .info-block .f-row-info .title-info:last-child,
 .tooltip-inner .info-block .f-row-info .price-info:last-child {
     font-weight: 600;
@@ -396,18 +538,7 @@
     transition: 0.2s;
     transition-timing-function: linear;
 }
-.slick-dots{
-    bottom: -45px;
-}
-.slick-dots li button:before{
-    font-size: 8px;
-    color: #d5d6d8;
-    opacity: 1;
-}
-.slick-dots li.slick-active button:before{
-    color: #25345B;
-    opacity: 1;
-}
+
 /* стрелки карусели */
 
 .bg-white-popular .owl-nav{

@@ -63,12 +63,15 @@
     .bg-white-block .container-lg,
     .bg-white-information .container-lg,
     .bg-white-block-two .container-lg,
-    .bg-white-questions .container-lg,
-    .bg-white-social-media .container-lg{
+    .bg-white-questions .container-lg{
         width: 75%;
     }
     #collapseThree .accordion-body iframe{
         height: 447px;
+    }
+    .bg-white-social-media .row-blocks-social .block{
+        width: 360px;
+        height: 360px;
     }
 }
 @media only screen and (max-width : 1300px) {
@@ -81,8 +84,7 @@
     .bg-white-block .container-lg,
     .bg-white-information .container-lg,
     .bg-white-block-two .container-lg,
-    .bg-white-questions .container-lg,
-    .bg-white-social-media .container-lg{
+    .bg-white-questions .container-lg{
         width: 80%;
     }
 }
@@ -94,13 +96,11 @@
         font-size: 50px;
         line-height: 58px;
     }
-
     /* end-bg-main-top */
     .bg-white-block .container-lg,
     .bg-white-information .container-lg,
     .bg-white-block-two .container-lg,
-    .bg-white-questions .container-lg,
-    .bg-white-social-media .container-lg{
+    .bg-white-questions .container-lg{
         width: 90%;
     }
     .bg-main-top::before{
@@ -111,6 +111,10 @@
         width: 350%;
         height: 350%;
         top: -50%;
+    }
+    .bg-white-social-media .row-blocks-social .block{
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -124,8 +128,7 @@
     .bg-white-block .container-lg,
     .bg-white-information .container-lg,
     .bg-white-block-two .container-lg,
-    .bg-white-questions .container-lg,
-    .bg-white-social-media .container-lg{
+    .bg-white-questions .container-lg{
         width: 100%;
     }
 }
@@ -166,10 +169,29 @@
     .bg-white-block-two .container-lg::before{
         width: 70%;
     }
+    .bg-white-social-media .title{
+        margin-bottom: 40px;
+    }
+}
+@media only screen and (max-width : 920px){
+    .bg-white-social-media .row-blocks-social .block{
+        height: 280px;
+        width: 280px;
+    }
+}
+@media only screen and (max-width : 870px){
+    .bg-white-social-media .row-blocks-social .block{
+        height: 270px;
+        width: 270px;
+    }
 }
 @media only screen and (max-width : 840px){
     #collapseThree .accordion-body iframe{
         height: 370px;
+    }
+    .bg-white-social-media .row-blocks-social .block{
+        height: 245px;
+        width: 245px;
     }
 }
 
@@ -218,11 +240,40 @@
     #collapseThree .accordion-body iframe{
         height: 355px;
     }
+    .bg-white-social-media .row-blocks-social{
+        flex-direction: column;
+    }
+    .bg-white-social-media .row-blocks-social .block{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .bg-white-social-media .row-blocks-social .block:last-child{
+        margin-bottom: 0;
+    }
+    .bg-white-social-media .row-blocks-social .block>img{
+        object-fit: cover;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)>img{
+        object-position: 0 -145px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)>img{
+        object-position: 0 -60px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(3)>img{
+        object-position: 0 61%;
+    }
 }
 @media only screen and (max-width : 680px) {
     #collapseThree .accordion-body iframe {
         height: 260px;
     }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)>img{
+        object-position: 0 -85px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)>img{
+        object-position: 0 0;
+    }
+    
 }
 
 @media only screen and (max-width : 576px) {
@@ -313,28 +364,31 @@
         margin-right: 10px;
         margin-left: 10px;
     }
-    .bg-white-social-media .container-lg.mobile{
-        display: block;
-    }
-    .bg-white-social-media .container-lg.desctop{
-        display: none;
-    }
+    
     .bg-white-social-media .title{
         margin-bottom: 40px;
     }
     .bg-white-social-media .container-lg{
         padding: 0 20px;
     }
-    .bg-white-social-media .container-lg > div{
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
+    .bg-white-social-media .row-blocks-social .block{
+        height: 200px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)::after,
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)::after,
+    .bg-white-social-media .row-blocks-social .block:nth-child(3)::after {
+        
+        background-position: inherit;
+        background-size: contain;
+        width: 60%;
+        height: 50%;
+        top: 25%;
+        right: 0;
     }
     /* end-bg-main-top */
 }
 @media only screen and (max-width : 480px){
-    .bg-white-contact .block-specialist,
-    .bg-white-social-media .container-lg>div{
+    .bg-white-contact .block-specialist{
         
         width: 100%;
     }
@@ -344,14 +398,50 @@
     #collapseThree .accordion-body iframe{
         height: 200px;
     }
+    .bg-white-social-media .row-blocks-social .block{
+        height: 150px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)::after,
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)::after,
+    .bg-white-social-media .row-blocks-social .block:nth-child(3)::after {
+        
+        background-position: inherit;
+        background-size: contain;
+        width: 55%;
+        height: 30%;
+        top: 35%;
+        right: 0;
+    }
 }
 @media only screen and (max-width : 440px){
     #collapseThree .accordion-body iframe {
         height: 180px;
     }
+    .bg-white-social-media .row-blocks-social .block{
+        height: 100px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)>img{
+        object-position: 0 -85px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)>img{
+        object-position: 0 -40px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(3)>img{
+        object-position: 0 61%;
+    }
+    
 }
 @media only screen and (max-width : 400px) {
     #collapseThree .accordion-body iframe {
         height: 150px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(1)>img{
+        object-position: 0 -55px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(2)>img{
+        object-position: 0 -20px;
+    }
+    .bg-white-social-media .row-blocks-social .block:nth-child(3)>img{
+        object-position: 0 61%;
     }
 }

@@ -56,8 +56,6 @@
     footer .container-lg{
         padding: 0 24px;
     }
-}
-@media only screen and (max-width : 920px){
     footer .block-info,
     footer .information{
         justify-content: center;
@@ -71,6 +69,15 @@
     footer .block-info .info:not(:last-child){
         margin-right: 60px;
     }
+    footer .block-info>.logo-copyright>div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width : 920px){
+    
 }
 @media only screen and (max-width : 720px){
     footer .block-info .info:not(:first-child) .title{
@@ -156,11 +163,12 @@
         margin-bottom: 20px;
     }
     footer .block-info .info,
-    footer .block-info .info a{
+    footer .block-info .info a,
+    footer .block-info>.logo-copyright>a{
         font-size: 16px;
         line-height: 24px;
     } 
-    footer .block-info>.logo-copyright>p{
+    footer .block-info>.logo-copyright>div>p{
         font-size: 15px;
         line-height: 21px;
     }

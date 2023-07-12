@@ -8,6 +8,9 @@ button.btn-close:focus{
 .btn-close:hover{
     opacity: 1;
 }
+.modal-content .modal-body{
+    overflow-x: hidden;
+}
 #modalDialog .modal-content,
 #window_after_sending .modal-content,
 #modalDialogСalculate .modal-content,
@@ -55,6 +58,25 @@ button.btn-close:focus{
     position: relative;
     z-index: 2;
 }
+#modalDialog .modal-content .modal-header.desctop .desct-ico,
+#modalReviews .modal-content .modal-header.desctop .desct-ico,
+#modalSeeConditions .modal-content .modal-header.desctop .desct-ico,
+#modalDialogСalculate .modal-content .modal-header.desctop .desct-ico,
+#window_after_sending .modal-content .modal-header.desctop .desct-ico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.modal-header .btn-close{
+    margin-left: 0;
+}
+#modalReviews .modal-content .modal-header .btn-close,
+#window_after_sending .modal-content .modal-header .btn-close,
+#modalSeeConditions .modal-content .modal-header .btn-close{
+    margin-left: auto;
+}
 #modalDialog .modal-content .modal-header .modal-title,
 #modalDialogСalculate .modal-content .modal-header .modal-title,
 #window_after_sending .modal-body h2{
@@ -65,7 +87,11 @@ button.btn-close:focus{
     font-weight: 600;
     line-height: 32px;
 }
-
+#modalDialog .modal-content .modal-header img,
+#modalDialogСalculate .modal-content .modal-header img{
+    height: 26px;
+    width: auto;
+}
 #modalReviews .modal-content .modal-body p{
     display: none;
     color:  #25345B;
@@ -127,9 +153,10 @@ button.btn-close:focus{
 #modalSeeConditions .modal-body .text span{
     font-weight: 600;
 }
-#modalDialog .modal-content .modal-body .modal-title.mobile,
-#modalDialogСalculate .modal-content .modal-body .modal-title.mobile,
-#window_after_sending .modal-body .modal-title.mobile{
+
+#modalDialog .modal-content .modal-body .mob-icon,
+#modalDialogСalculate .modal-content .modal-body .mob-icon,
+#window_after_sending .modal-body .mob-icon{
     display: none;
 }
 #modalDialog .modal-content .modal-body .sub-title,
@@ -272,8 +299,59 @@ textarea::-moz-placeholder {
     transition: 0.2s;
     transition-timing-function: linear;
 }
-
-
+/* CKECKBOX */
+form .custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.custom-checkbox+label {
+    /* display: inline-flex;
+    align-items: center; */
+    text-align: center;
+    user-select: none;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.custom-checkbox.error+label::before{
+    border: 2px solid #bc1818;
+    /* transform: scale(1.1); */
+    animation: error .3s linear;
+}
+@keyframes error{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+}
+.custom-checkbox:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+/* ---------- */
 @media only screen and (max-width : 992px){
     #modalDialog .modal-content .modal-body, 
     #modalDialogСalculate .modal-content .modal-body{
@@ -369,16 +447,28 @@ textarea::-moz-placeholder {
         display: flex;
         align-items: center;
     }
+    #modalDialog .modal-content .modal-body .mob-icon,
+    #modalDialogСalculate .modal-content .modal-body .mob-icon,
+    #window_after_sending .modal-body .mob-icon{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     #modalDialog .modal-content .modal-body .modal-title.mobile,
     #modalDialogСalculate .modal-content .modal-body .modal-title.mobile,
     #window_after_sending .modal-body .modal-title.mobile{
-        display: block;
         margin-bottom: 16px;
         color: #25345B;
         font-size: 26px;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
+    }
+    #modalDialog .modal-content .modal-body .mob-icon img,
+    #modalDialogСalculate .modal-content .modal-body .mob-icon img,
+    #window_after_sending .modal-body .mob-icon img{
+        height: 26px;
+        width: auto;
     }
     #window_after_sending .modal-body{
         padding-top: 40px;

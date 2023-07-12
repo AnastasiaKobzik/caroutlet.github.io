@@ -86,6 +86,18 @@
     .bg-white-banner .banner::after{
         height: 150%;
     }
+    .bg-white-items .item:nth-child(1) .sub-item:hover::before{
+        padding: 90px 80px 90px 100px;
+        font-size: 22px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .bg-white-items .item:nth-child(2) .sub-item:hover::before{
+        padding: 105px 90px 105px 80px;
+        font-size: 22px;
+        line-height: 30px; 
+        font-weight: 600;
+    }
 }
 
 @media only screen and (max-width : 1300px) {
@@ -110,6 +122,18 @@
     /* end-bg-main-top */
     .bg-grey .advantages .advant{
         padding: 0;
+    }
+
+    .bg-white-items .item:nth-child(1) .sub-item:hover::before{
+        padding: 100px 40px 100px 80px;
+        font-size: 20px;
+        line-height: 28px; 
+    }
+    .bg-white-items .item:nth-child(2) .sub-item:hover::before{
+        padding: 105px 60px 105px 60px; 
+        width: 42%;
+        font-size: 20px;
+        line-height: 28px; 
     }
 
 
@@ -174,6 +198,9 @@
     .bg-white-popular .owl-nav,
     .bg-white-reviews .owl-nav{
         display: none;
+    }
+    .slick_dots{
+        display: block;
     }
 }
 
@@ -250,6 +277,16 @@
     #videoModal iframe{
         height: 395px;
     }
+    .bg-white-items .item:nth-child(1) .sub-item:hover::before{
+        display: none;
+    }
+    .bg-white-items .item:nth-child(2) .sub-item:hover::before{
+        display: none;
+    }
+    .bg-white-items .item .sub-item:hover{
+        background: #e9ebed;
+        color: #25345B;
+    }
 }
 @media only screen and (max-width : 920px){
     
@@ -314,7 +351,9 @@
         height: 337px;
     }
     /* end-bg-main-top */
-
+    .slick_dots .slick-list{
+        width: 25%;
+    }
     /* bg-grey block */
     .bg-grey .advantages .advant{
         padding-right: 10px;
@@ -645,6 +684,9 @@
     .slick-slider.gallery .title-item{
         margin-bottom: 16px;
     }
+    .slick_dots .slick-list{
+        width: 50%;
+    }
 }
 @media only screen and (max-width : 538px){
     .slick-slider.gallery .item {
@@ -826,11 +868,14 @@
         width: 100px;
         height: 100px;
     }
+    .slick_dots .slick-list{
+        width: 60%;
+    }
 }
 @media only screen and (max-width : 360px){
     
     #videoModal iframe{
-        height: 180px;
+        height: 185px;
     }
 }
 @media only screen and (max-width : 350px) {

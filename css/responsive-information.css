@@ -55,10 +55,13 @@
         left: -32%;
     }
     /* end-bg-main-top */
-
+    .bg-white-information #navbar-info .banner{
+        display: none;
+    }
 }
 
 @media only screen and (max-width : 1400px) {
+    
     .bg-white-information #item-3 .cards .card{
         width: 49%;
         padding-bottom: 35px;
@@ -213,7 +216,22 @@
         margin-bottom: 20px;
     }
 }
-
+@media only screen and (max-width : 870px){
+    .bg-white-information #item-10 .three-blocks{
+        flex-direction: column;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .bg-white-information #item-10 .three-blocks .block{
+        margin-right: 0;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .bg-white-information #item-10 .three-blocks .block:last-child{
+        margin-bottom: 0;
+    }
+}
 @media only screen and (max-width : 768px) {
 
     /* bg-main-top */
@@ -262,9 +280,9 @@
     .bg-white-information #item-3 .cards .card:last-child{
         margin-bottom: 0;
     }
-    .bg-white-information #item-5 img, .bg-white-information #item-6 img, 
-    .bg-white-information #item-7 img, .bg-white-information #item-8 img, 
-    .bg-white-information #item-10 img, .bg-white-information #item-9 img{
+    .bg-white-information #item-5 .accordion-body>img, .bg-white-information #item-6 .accordion-body>img, 
+    .bg-white-information #item-7 .accordion-body>img, .bg-white-information #item-8 .accordion-body>img, 
+    .bg-white-information #item-9 .accordion-body>img{
         margin-bottom: 40px;
         border-radius: 20px;
     }
@@ -283,6 +301,24 @@
     .bg-white-information #item-9 .table-info p{
         padding: 10px 20px;
     }
+    .bg-white-information .info .sub-title.big{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    .bg-white-information #item-10 .three-blocks{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .bg-white-information #item-10 .accordion-body>img{
+        margin-bottom: 20px;
+        border-radius: 20px;
+    }
+    .bg-white-information #item-10 .three-blocks .block{
+        margin-bottom: 10px;
+    }
+    
+    
 }
 
 @media only screen and (max-width : 576px) {
@@ -330,8 +366,9 @@
     }
     .bg-white-information .info .blue-block button,
     .bg-white-information .info .blue-block a,
-    .bg-white-information #item-4 .grey-block:last-child a{
+    .bg-white-information #item-4 .grey-block .but-dogovor>a{
         font-size: 18px;
+        padding: 12px 20px;
     }
     .bg-white-information .info .blue-block{
         padding: 20px;
@@ -409,14 +446,32 @@
     .bg-white-information #item-9 .bg-grey{
         margin-bottom: 30px;
     }
-    .bg-white-information #item-10 img,
-    .bg-white-information #item-9 img{
+    .bg-white-information #item-10>img,
+    .bg-white-information #item-9>img{
         margin-bottom: 20px;
     }
     .bg-white-information #item-10.info .blue-block {
         text-align: center;
     }
-    
+    .bg-white-information #item-10 .mb-div{
+        margin-bottom: 20px;
+    }
+    .bg-white-information #item-4 .grey-block:last-child>.text:first-child{
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+    #conditions .accordion-body div.txt:nth-child(1){
+        margin-bottom: 40px;
+    }
+    #conditions .accordion-body div.txt{
+        margin-bottom: 30px;
+    }
+    .bg-white-information #item-10  .accordion-body>img.desct{
+        display: none;
+    }
+    .bg-white-information #item-10  .accordion-body>img.mobile{
+        display: block;
+    }
 }
 
 @media only screen and (max-width : 480px){
