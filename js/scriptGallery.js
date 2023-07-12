@@ -8,6 +8,8 @@ $('.slick-slider.gallery').slick({
     nextArrow: $('.bg-white-popular .owl-nav button.owl-next'),
     infinite: true,
     autoplay: true,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     autoplaySpeed: 3000,
     responsive: [
         {
@@ -20,7 +22,7 @@ $('.slick-slider.gallery').slick({
             breakpoint: 1100,
             settings: {
                 arrows: false,
-                dots: true,
+                asNavFor: '.slick_dots.gallery',
                 slidesToShow: 3,
             }
         },
@@ -28,7 +30,7 @@ $('.slick-slider.gallery').slick({
             breakpoint: 746,
             settings: {
                 arrows: false,
-                dots: true,
+                asNavFor: '.slick_dots.gallery',
                 slidesToShow: 2,
             }
         },
@@ -36,15 +38,28 @@ $('.slick-slider.gallery').slick({
             breakpoint: 480,
             settings: {
                 arrows: false,
-                dots: true,
+                asNavFor: '.slick_dots.gallery',
                 slidesToShow: 1,
             }
         }
     ]
-    
-    
 });
-//    
+
+$('.slick_dots.gallery').slick({ // настройка навигации
+    slidesToShow: 5, // указываем что нужно показывать 3 навигационных изображения
+    slidesToScroll: 1,
+    arrows: false,
+    asNavFor: '.slick-slider.gallery',  //указываем что это навигация для блока выше
+    focusOnSelect: true, // указываем что бы слайделось по клику
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 8,
+            }
+        }
+    ]
+});
 
 //отзывы
 $('.slick-slider.reviews').slick({
@@ -56,6 +71,8 @@ $('.slick-slider.reviews').slick({
     nextArrow: $('.bg-white-reviews .owl-nav button.owl-next'),
     infinite: true,
     autoplay: true,
+    pauseOnHover: true,
+    pauseOnFocus: true,
     autoplaySpeed: 3000,
     responsive: [
         {

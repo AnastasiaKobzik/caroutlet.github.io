@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caroutlet.by - Помощь в покупке автомобиля. Аукцион авто из Европы</title>
+    <link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
 
     <!-- BOOTSTRAP CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -143,11 +144,11 @@
                 </div>
             </button>
             <div class='messengers-chat dropdown-menu '>
-                <a href='https://www.tiktok.com/@caroutlet.by?_t=8dmgZCINTC2&_r=1'><img src='./image/icon/Tiktok.svg' alt='Tiktok'></a>
-                <a href='https://instagram.com/caroutlet.by?igshid=MzRlODBiNWFlZA=='><img src='./image/icon/Instagram.svg' alt='Instagram'></a>
-                <a href='https://t.me/CarOutlet_by_Minsk'><img src='./image/icon/Telegram.svg' alt='Telegram'></a>
-                <a href='viber://chat?number=%2B375447008477'><img src='./image/icon/Viber.svg' alt='Viber'></a>
-                <a href='https://wa.me/375297008477'><img src='./image/icon/Whatsapp.svg' alt='Whatsapp'></a>
+                <a href='https://www.tiktok.com/@caroutlet.by?_t=8dmgZCINTC2&_r=1' target="_blank"><img src='./image/icon/Tiktok.svg' alt='Tiktok'></a>
+                <a href='https://instagram.com/caroutlet.by?igshid=MzRlODBiNWFlZA==' target="_blank"><img src='./image/icon/Instagram.svg' alt='Instagram'></a>
+                <a href='https://t.me/CarOutlet_by_Minsk' target="_blank"><img src='./image/icon/Telegram.svg' alt='Telegram'></a>
+                <a href='viber://chat?number=%2B375447008477' target="_blank"><img src='./image/icon/Viber.svg' alt='Viber'></a>
+                <a href='https://wa.me/375297008477' target="_blank"><img src='./image/icon/Whatsapp.svg' alt='Whatsapp'></a>
             </div>
         </div>
 
@@ -158,7 +159,7 @@
                     <div class="col-xl-6 col-md-9 col-sm-11">
                         <p class="main-text">CarOutlet — автомобильный аукцион</p>
                         <p class="sub-text">CarOutlet является одной из ведущих онлайн-платформ в Европе для всех участников рынка подержанных легковых автомобилей и фургонов.</p>
-                        <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="💬" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button>
+                        <button class="main-but" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="./image/emoji/speech-balloon.png" data-bs-whatever="Бесплатная консультация">Бесплатная консультация</button>
                     </div>
                 </div>
             </div>
@@ -303,7 +304,7 @@
                     Суббота: <span>10.00—13.00 и 14.00—17.00</span>  </p>
                     <p class="work-text">С вопросами в мессенджеры обращайтесь в любое время суток — вам ответят в рабочее время. Приятный покупока на CarOutlet!</p>
                     
-                    <button class="button-call" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="☎️" data-bs-whatever="Заказать звонок"><img src="./image/icon/emoji-tel.svg" alt="emoji-tel"> Заказать звонок</button>
+                    <button class="button-call" type="button" data-bs-toggle="modal" data-bs-target="#modalDialog" data-bs-icon="./image/emoji/telephone.png" data-bs-whatever="Заказать звонок"><img src="./image/emoji/telephone.png" alt="emoji-tel"> Заказать звонок</button>
                 </div>
                 <div class="slick block-specialist">
                     <div class="specialist">
@@ -329,19 +330,19 @@
         </div>
 
         <div class="bg-white-social-media">
-            <div class="container-lg desctop">
+            <div class="container-lg">
                 <h2 class="title">Следите за нами в соцсетях</h2>
-                <img src="./image/jpeg/title-social-media.jpg" alt="шапка социальной сети" class="head-img">
-                <img src="./image/jpeg/social-media.jpg" alt="социальная сеть" class="main-img">
-            </div>
-            <div class="container-lg mobile">
-                <h2 class="title">Следите за нами в соцсетях</h2>
-                <div>
-                    <img src="./image/jpeg/title-social-media-mobile.jpg" alt="шапка социальной сети" class="head-img">
-                    <img src="./image/jpeg/social-media-mobile-1.jpg" alt="социальная сеть" class="main-img">
-                    <img src="./image/jpeg/social-media-mobile-2.jpg" alt="социальная сеть" class="main-img">
+                <div class="row-blocks-social">
+                    <a class="block" href="https://www.instagram.com/reel/CpKj0F6oei-/?igshid=MzRlODBiNWFlZA==" target="_blank">
+                        <img src="./image/png/image_socialmedia_instagram.jpg" alt="instagram">
+                    </a>
+                    <a class="block" href="https://vm.tiktok.com/ZM2QmA3Fn/" target="_blank">
+                        <img src="./image/png/image_socialmedia_tiktok.jpg" alt="tiktok">
+                    </a>
+                    <a class="block" href="https://t.me/CarOutlet_by_Minsk/1043" target="_blank">
+                        <img src="./image/png/image_socialmedia_telegram.png" alt="telegram">
+                    </a>
                 </div>
-                
             </div>
         </div>
     </main>
@@ -392,10 +393,13 @@
 
     <!-- modalDialog -->
     <div class="modal fade" id="modalDialog" tabindex="-1" aria-labelledby="modalDialogLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header desctop">
-                    <h1 class="modal-title" id="modalDialogLabel">Бесплатная консультация</h1>
+                    <div class="desct-ico">
+                        <img src="" alt="">
+                        <h1 class="modal-title" id="modalDialogLabel"> Бесплатная консультация</h1>
+                    </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-header mobile">
@@ -403,7 +407,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
                 </div>
                 <div class="modal-body">
-                    <h1 class="modal-title mobile">Бесплатная консультация</h1>
+                    <div class="mob-icon">
+                        <img src="" alt="">
+                        <h1 class="modal-title mobile">Бесплатная консультация</h1>
+                    </div>
                     <h2 class="sub-title">Уважаемые пользователи, обращаем ваше внимание: минимальный бюджет для пригона
                         авто составляет € 5000.</h2>
                     <form method="post" class="modalDialogForm">
@@ -420,6 +427,13 @@
                         <div class="form-group">
                             <textarea name="comment" class="form-control" id="comment" rows="4"
                                 placeholder="Комментарий или вопрос*"></textarea>
+                            <small class="form-feedback"> </small>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" class="form-control custom-checkbox agreement" id="agreement1"
+                                name="agreement" value="yes" checked>
+                            <label for="agreement1">Я даю согласие на обработку персональных данных и соглашаюсь с <a
+                                    href="#">политикой конфидециальности</a></label>
                             <small class="form-feedback"> </small>
                         </div>
                         <input type="hidden" name="status" value="" class="hidden-status">
@@ -460,106 +474,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <script src="./js/scriptGallery.js"></script>
-    <script>
-        // отправка формы с мод окна
-            $('#modalDialog .button-send').on('click', function (e) {
-                $('.modalDialogForm .error').css('display', 'none');
-                sendModalDialogForm('modalDialogForm', './request/send-consultation.php');
-                return false;
-            });
-
-            function sendModalDialogForm(ajax_form, url) {
-                $.ajax({
-                    url: url, //url страницы (action_ajax_form.php)
-                    type: "POST", //метод отправки
-                    dataType: "html", //формат данных
-                    data: $("." + ajax_form).serialize(),  // Сеарилизуем объект
-                    success: function (response) { //Данные отправлены успешно 
-                        let input = $('.modalDialogForm input')
-
-                        for (let i = 0; i < input.length; i++) {
-                            $(input[i]).css('border', '0')
-
-                        }
-                        $("#modalDialog").modal('hide');
-                        $("#window_after_sending").modal('show');
-                    },
-                    error: function (response, status, error) { // Данные не отправлены
-                        var errors = JSON.parse(response.responseText);
-                        $('.form-feedback').text("");
-                        let input = $('.modalDialogForm input')
-
-                        for (let i = 0; i < input.length; i++) {
-                            $(input[i]).css('border', '0')
-                        }
-                        console.log();
-                        if (errors.errors) {
-                            errors.errors.forEach(function (data, index) {
-                                var field = Object.getOwnPropertyNames(data);
-                                var value = data[field];
-                                var div = $("#" + field[0]).closest('div');
-
-                                div.children('.form-feedback').text(value);
-                                $("#" + field[0]).css("border", "2px solid #bc1818");
-                                div.children('.form-feedback').css("color", "#bc1818");
-                            });
-                        }
-                    }
-                });
-            }
-            $('#window_after_sending .btn-close').on('click', function () {
-                $("#window_after_sending").modal('hide');
-                location.reload();
-            });
-            // вызов модального окна и меняется текст
-            const modalDialog = document.getElementById('modalDialog')
-            if (modalDialog) {
-                modalDialog.addEventListener('show.bs.modal', event => {
-                    const button = event.relatedTarget
-                    const recipient = button.getAttribute('data-bs-whatever');
-                    const icon = button.getAttribute('data-bs-icon')
-
-                    const modalTitle = modalDialog.querySelector('#modalDialog .modal-title')
-                    const modalTitleMobile = modalDialog.querySelector('#modalDialog .modal-title.mobile')
-                    const modalHidden = modalDialog.querySelector('#modalDialog .modalDialogForm .hidden-status')
-                    modalTitle.innerHTML = `${icon} <br> ${recipient}`
-                    modalTitleMobile.innerHTML = `${icon} <br> ${recipient}`
-                    modalHidden.value = `${recipient}`
-                })
-            }
-
-
-            //При наведении в меню открывается список телефонов
-        const telMenu = document.querySelector('.nav-item.dropdown.in-mobile')
-        if(telMenu){
-            telMenu.addEventListener('mouseover', (e)=>{
-                const navLink = telMenu.querySelector('.nav-link.dropdown-toggle')
-                navLink.classList.add('show');
-                navLink.setAttribute('aria-expanded','true')
-
-                const dropdownMenu = telMenu.querySelector('.dropdown-menu')
-                dropdownMenu.classList.add('show');
-                dropdownMenu.setAttribute('data-bs-popper', 'none')
-            })
-            telMenu.addEventListener('mouseout', (e)=>{
-                const navLink = telMenu.querySelector('.nav-link.dropdown-toggle')
-                navLink.classList.remove('show');
-                navLink.setAttribute('aria-expanded','false')
-
-                const dropdownMenu = telMenu.querySelector('.dropdown-menu')
-                dropdownMenu.classList.remove('show');
-                dropdownMenu.removeAttribute('data-bs-popper')
-            })
-            telMenu.addEventListener('click', (e) => {
-                const navLink = telMenu.querySelector('.nav-link.dropdown-toggle')
-                navLink.classList.add('show');
-                navLink.setAttribute('aria-expanded', 'true')
-
-                const dropdownMenu = telMenu.querySelector('.dropdown-menu')
-                dropdownMenu.classList.add('show');
-                dropdownMenu.setAttribute('data-bs-popper', 'none')
-            })
-        }
-    </script>
+    <script src="./js/scriptAboutUs.js"></script>
 </body>
 </html>
